@@ -1,8 +1,10 @@
 <template>
     <b-navbar toggleable="md" type="dark" variant="info" class="main-nav">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+        <b-navbar-brand href="#">
+            <img src="../assets/spinoza-menu.png" alt="" class="spinoza-img">
+            spinozapp
+        </b-navbar-brand>
 
         <b-collapse is-nav id="nav_collapse">
 
@@ -42,9 +44,20 @@
 </template>
 
 <style>
+.spinoza-img {
+    height: 60px;
+    width: auto;
+}
+a.navbar-brand {
+    padding-bottom: 0;
+}
 .main-nav {
     position: fixed;
     top: 0;
     width: 100%
+}
+nav.navbar.main-nav.navbar-dark.bg-info.navbar-expand-md {
+    padding: 0;
+    margin: 0;
 }
 </style>
