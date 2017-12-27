@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="md" type="dark" variant="info">
+    <b-navbar toggleable="md" type="dark" variant="info" class="main-nav">
         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
         <b-navbar-brand href="#">NavBar</b-navbar-brand>
@@ -37,6 +37,14 @@
             </b-navbar-nav>
 
         </b-collapse>
-        </b-navbar>
+    </b-navbar>
 
 </template>
+
+<style>
+.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+</style>
