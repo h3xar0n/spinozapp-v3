@@ -35,10 +35,16 @@ a.navbar-brand {
     width: 100%
 }
 .btn-secondary {
+    background-color: #35495e;
     margin: 10px;
 }
+.btn-secondary:hover {
+    background-color: #597da1;
+}
 .btn-secondary:not([disabled]):not(.disabled).active {
-    background-color: #41b883
+    background-color: #41b883;
+    border: 1px solid #35495e;
+    box-shadow: none;
 }
 nav.navbar.main-nav.navbar-dark.navbar-expand-md {
     padding: 0;

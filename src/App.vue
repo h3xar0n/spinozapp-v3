@@ -23,5 +23,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 65px;
+  min-height: 100vh;
+  background-color: #fdf3f3;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 </style>
