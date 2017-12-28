@@ -10,7 +10,6 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                <b-button-group>
                     <b-button to="/resolution">Resolution</b-button>
                     <b-dropdown right text="Reader">
                         <b-dropdown-item to="/reader">Book 1</b-dropdown-item>
@@ -23,7 +22,6 @@
                     </b-dropdown>
                     <b-button to="/graph">Graph</b-button>
                     
-                </b-button-group>
             </b-navbar-nav>
 
         </b-collapse>
@@ -31,7 +29,7 @@
 
 </template>
 
-<style>
+<style scoped>
 .spinoza-img {
     height: 60px;
     width: auto;
