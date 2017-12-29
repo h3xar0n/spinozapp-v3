@@ -54,7 +54,25 @@
                 lacinia congue felis in faucibus.
             </b-media>
         </ul>
-        <!-- contribution section with images -->
+        <b-container class="contribution-info">
+            <b-row>
+                <b-col>
+                    <img src="../../assets/gitlab-logo.png" alt="">
+                    <h2>Code</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>                </b-col>
+                <b-col>
+                    <img src="../../assets/content.png" alt="">
+                    <h2>Content</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </b-col>
+                <b-col>
+                    <img src="../../assets/spinoza-money.jpg" alt="">
+                    
+                    <h2>Cash</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </b-col>
+            </b-row>
+        </b-container>
         <!-- external videos -->
         <!-- external links -->
         <!-- contact form -->
@@ -64,5 +82,9 @@
 <style>
 .features-info {
     margin-top: 30px;
+}
+.contribution-info img {
+    height: 100px;
+    width: auto;
 }
 </style>
