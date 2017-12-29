@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <router-view></router-view>
+    <router-view class="view"></router-view>
   </div>
 </template>
 
@@ -22,12 +22,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 65px;
-  min-height: 100vh;
+  padding-top: 100px;
+
   background-color: #fdf3f3;
 }
 
-html {
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
+
 </style>
