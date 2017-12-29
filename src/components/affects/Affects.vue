@@ -35,10 +35,61 @@
 							<b-button to="/reader" variant="primary">Read in the Ethics</b-button>
 						</b-card>
 					</div>
+					<div v-if="affect === 'sorrow'">
+						<b-card title="Sorrow"
+								img-alt="Image"
+								img-top
+								tag="article"
+								class="mb-2">
+							<img src="../../assets/spinoza-emo.jpg" alt="" style="max-width: 100%;">
+							<p class="card-text">
+							Some quick example text to build on the card title and make up the bulk of the card's content.
+							</p>
+							<b-button href="#" variant="primary">Find a resolution</b-button>
+							<br>
+							<br>
+							<b-button to="/reader" variant="primary">Read in the Ethics</b-button>
+						</b-card>
+					</div>
+					<div v-if="affect === 'joy'">
+						<b-card title="Joy"
+								img-alt="Image"
+								img-top
+								tag="article"
+								class="mb-2">
+							<img src="../../assets/spinoza-menu.png" alt="" style="max-width: 100%;">
+							<p class="card-text">
+							Some quick example text to build on the card title and make up the bulk of the card's content.
+							</p>
+							<b-button href="#" variant="primary">Find a resolution</b-button>
+							<br>
+							<br>
+							<b-button to="/reader" variant="primary">Read in the Ethics</b-button>
+						</b-card>
+					</div>
+					<div v-if="affect === 'love'">
+						<b-card title="Love"
+								img-alt="Image"
+								img-top
+								tag="article"
+								class="mb-2">
+							<img src="../../assets/spinoza-menu.png" alt="" style="max-width: 100%;">
+							<p class="card-text">
+							Some quick example text to build on the card title and make up the bulk of the card's content.
+							</p>
+							<b-button href="#" variant="primary">Find a resolution</b-button>
+							<br>
+							<br>
+							<b-button to="/reader" variant="primary">Read in the Ethics</b-button>
+						</b-card>
+					</div>
 				</div>
 				<div class="affect-graph col-xs-12 col-md-8">
 					<b-button @click="affect = 'passion'">Passion</b-button>
 					<b-button @click="affect = 'action'">Action</b-button>
+					<b-button @click="affect = 'sorrow'">Sorrow</b-button>
+					<b-button @click="affect = 'joy'">Joy</b-button>
+					<b-button @click="affect = 'love'">Love</b-button>
 				</div>
 				
 			</div>
