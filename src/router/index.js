@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home/Home'
-import Resolution from '@/components/resolution/Resolution'
+import Affects from '@/components/affects/Affects'
 import Reader from '@/components/reader/Reader'
 import Graph from '@/components/graph/Graph'
 
@@ -16,9 +16,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/resolution',
-      name: 'Resolution',
-      component: Resolution
+      path: '/affects',
+      name: 'Affects',
+      component: Affects
     },
     {
       path: '/reader',

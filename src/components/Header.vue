@@ -10,7 +10,7 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                    <b-button to="/resolution">Resolution</b-button>
+                    <b-button to="/affects">Affects</b-button>
                     <b-button to="/reader">Reader</b-button>
                     <b-button to="/graph">Graph</b-button>
                     
@@ -47,6 +47,7 @@ a.navbar-brand {
     box-shadow: none;
 }
 nav.navbar.main-nav.navbar-dark.navbar-expand-md {
+    z-index: 3;
     padding: 0;
     margin: 0;
     background: #35495e
