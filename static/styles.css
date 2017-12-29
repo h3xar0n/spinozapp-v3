@@ -1,3 +1,7 @@
 h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.approach {
+  padding-top: 40px;
+}

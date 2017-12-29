@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row approach">
         <div class="col-xs-3 col-md-3">
             <h2>Dependencies</h2>
         </div>

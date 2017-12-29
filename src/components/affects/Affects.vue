@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="approach">
         <b-button-group>
             <b-button>Passion</b-button>
             <b-button>Action</b-button>
