@@ -2,32 +2,7 @@
     <div>
         <jumbotron />
         <features />
-        <ul class="list-unstyled">
-            <b-media tag="li">
-                <b-img slot="aside" blank blank-color="#abc" width="200" alt="placeholder" />
-                <h5 class="mt-0 mb-1">Aroshka</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-                lacinia congue felis in faucibus.
-            </b-media>
-            <b-media tag="li" class="my-4">
-                <b-img slot="aside" blank blank-color="#cba" width="200" alt="placeholder" />
-                <h5 class="mt-0 mb-1">Adelinchik</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-                lacinia congue felis in faucibus.
-            </b-media>
-            <b-media tag="li">
-                <b-img slot="aside" blank blank-color="#bac" width="200" alt="placeholder" />
-                <h5 class="mt-0 mb-1">Spinoza</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
-                lacinia congue felis in faucibus.
-            </b-media>
-        </ul>
+        <team />
         <b-container class="contribution-info">
             <b-row>
                 <b-col>
@@ -82,11 +57,13 @@
 <script>
 import Jumbotron from './Jumbotron.vue'
 import Features from './Features.vue'
+import Team from './Team.vue'
 
 export default {
   components: {
     jumbotron: Jumbotron,
-    features: Features
+    features: Features,
+    team: Team
   }
 }
 </script>
