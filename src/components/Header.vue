@@ -10,10 +10,9 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                    <b-button to="/affects">Affects</b-button>
-                    <b-button to="/reader">Reader</b-button>
-                    <b-button to="/graph">Graph</b-button>
-                    
+                <b-button to="/affects">Affects</b-button>
+                <b-button to="/reader">Reader</b-button>
+                <b-button to="/graph">Graph</b-button>      
             </b-navbar-nav>
 
         </b-collapse>

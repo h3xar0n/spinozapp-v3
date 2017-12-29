@@ -1,3 +1,39 @@
 <template>
-    <h1>This is where the Homepage will go</h1>
+    <div>
+        <jumbotron />
+        <features />
+        <team />
+        <contribution />
+        <external />
+        <!-- books -->
+        <!-- contact -->
+    </div>
 </template>
+
+<script>
+import Jumbotron from './Jumbotron.vue'
+import Features from './Features.vue'
+import Team from './Team.vue'
+import Contribution from './Contribution.vue'
+import External from './External.vue'
+
+export default {
+  components: {
+    jumbotron: Jumbotron,
+    features: Features,
+    team: Team,
+    contribution: Contribution,
+    external: External
+  }
+}
+</script>
+
+<style>
+.features-info {
+    margin-top: 30px;
+}
+.contribution-info img {
+    height: 100px;
+    width: auto;
+}
+</style>
