@@ -1,9 +1,9 @@
 <template>
-  <footer>
-      <p>
-          ☮ 2017-2018 Aron Eidelman
-      </p>
-  </footer>
+    <footer>
+        <p>
+            ☮ 2017-2018 Aron Eidelman
+        </p>
+    </footer>
 </template>
 
 <style>
