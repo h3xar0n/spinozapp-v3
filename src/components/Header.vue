@@ -52,6 +52,7 @@
     z-index: 3;
     padding: 0;
     margin: 0;
+    background-color: #35495e;
   }
 
 </style>
