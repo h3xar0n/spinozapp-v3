@@ -1,29 +1,30 @@
 <template>
-    <div>
-        <jumbotron />
-        <features />
-        <team />
-        <contribution />
-        <external />
-        <!-- books -->
-        <!-- contact -->
-    </div>
+  <div>
+    <jumbotron />
+    <features />
+    <team />
+    <contribution />
+    <external />
+    <!-- books -->
+    <!-- contact -->
+  </div>
 </template>
 
 <script>
-import Jumbotron from './Jumbotron.vue'
-import Features from './Features.vue'
-import Team from './Team.vue'
-import Contribution from './Contribution.vue'
-import External from './External.vue'
+  import Jumbotron from './Jumbotron.vue'
+  import Features from './Features.vue'
+  import Team from './Team.vue'
+  import Contribution from './Contribution.vue'
+  import External from './External.vue'
 
-export default {
-  components: {
-    jumbotron: Jumbotron,
-    features: Features,
-    team: Team,
-    contribution: Contribution,
-    external: External
+  export default {
+    components: {
+      jumbotron: Jumbotron,
+      features: Features,
+      team: Team,
+      contribution: Contribution,
+      external: External
+    }
   }
-}
+
 </script>
