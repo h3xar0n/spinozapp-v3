@@ -19,3 +19,9 @@
         </b-row>
     </b-container>
 </template>
+
+<style>
+.features-info {
+    margin-top: 30px;
+}
+</style>

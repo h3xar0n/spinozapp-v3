@@ -21,3 +21,10 @@
         </b-row>
     </b-container>
 </template>
+
+<style>
+.contribution-info img {
+    height: 100px;
+    width: auto;
+}
+</style>

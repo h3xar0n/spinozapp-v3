@@ -27,13 +27,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.features-info {
-    margin-top: 30px;
-}
-.contribution-info img {
-    height: 100px;
-    width: auto;
-}
-</style>
