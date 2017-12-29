@@ -4,33 +4,9 @@
         <features />
         <team />
         <contribution />
-        <b-container class="external-videos">
-            <b-row>
-                <b-col>
-                    <b-embed type="iframe"
-                            aspect="16by9"
-                            src="https://www.youtube.com/embed/iUlz8ZjZlf0"
-                            allowfullscreen
-                    ></b-embed>
-                </b-col>
-                <b-col>
-                    <b-embed type="iframe"
-                            aspect="16by9"
-                            src="https://www.youtube.com/embed/pVEeXjPiw54"
-                            allowfullscreen
-                    ></b-embed>
-                </b-col>
-                <b-col>
-                    <b-embed type="iframe"
-                            aspect="16by9"
-                            src="https://www.youtube.com/embed/pVEeXjPiw54"
-                            allowfullscreen
-                    ></b-embed>
-                </b-col>
-            </b-row>
-        </b-container>
-        <!-- external links -->
-        <!-- contact form -->
+        <external />
+        <!-- books -->
+        <!-- contact -->
     </div>
 </template>
 
@@ -39,13 +15,15 @@ import Jumbotron from './Jumbotron.vue'
 import Features from './Features.vue'
 import Team from './Team.vue'
 import Contribution from './Contribution.vue'
+import External from './External.vue'
 
 export default {
   components: {
     jumbotron: Jumbotron,
     features: Features,
     team: Team,
-    contribution: Contribution
+    contribution: Contribution,
+    external: External
   }
 }
 </script>
