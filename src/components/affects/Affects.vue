@@ -3,6 +3,13 @@
     <div class="container">
       <!-- affect graph and details -->
       <div class="row">
+        <div class="affect-graph col-xs-12 col-md-8">
+          <b-button @click="affect = 'passion'">Passion</b-button>
+          <b-button @click="affect = 'action'">Action</b-button>
+          <b-button @click="affect = 'sorrow'">Sorrow</b-button>
+          <b-button @click="affect = 'joy'">Joy</b-button>
+          <b-button @click="affect = 'love'">Love</b-button>
+        </div>
         <div class="detail-card col-xs-12 col-md-4">
           <div v-if="affect === 'passion'">
             <b-card title="Passion"
@@ -82,17 +89,10 @@
             </b-card>
           </div>
         </div>
-        <div class="affect-graph col-xs-12 col-md-8">
-          <b-button @click="affect = 'passion'">Passion</b-button>
-          <b-button @click="affect = 'action'">Action</b-button>
-          <b-button @click="affect = 'sorrow'">Sorrow</b-button>
-          <b-button @click="affect = 'joy'">Joy</b-button>
-          <b-button @click="affect = 'love'">Love</b-button>
-        </div>		
       </div>
       <!-- affect checkbox and resolutions -->
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <ul>
             <li>
               <input type="checkbox" id="joy" value="true" v-model="selectedAffects.joy">
