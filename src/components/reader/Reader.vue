@@ -1,9 +1,14 @@
 <template>
-  <div class="approach">
-    <div class="row">
-      <h1></h1>
+  <div>
+    <div class="book-nav">
+        <b-button>Book 1</b-button>
+        <b-button>Book 2</b-button>
+        <b-button>Book 3</b-button>
+        <b-button>Book 4</b-button>
+        <b-button>Book 5</b-button>
     </div>
-    <div class="row">
+    <!-- <router-view /> -->
+    <div class="row approach">
       <div class="col-xs-3 col-md-3">
         <h2>Dependencies</h2>
       </div>
@@ -25,6 +30,19 @@
 <style>
   .card {
     width: 100%
+  }
+
+  .book-nav {
+    margin-top: 10px;
+  }
+
+  .book-nav button {
+    background-color: #35495e;
+    font-size: 10px;
+  }
+  .book-nav button:hover, .book-nav button:active {
+    color: #35495e;
+    background-color: white;
   }
 
 </style>
