@@ -5,6 +5,9 @@ import Affects from '@/components/affects/Affects'
 import Reader from '@/components/reader/Reader'
 import Book1 from '@/components/reader/Book1'
 import Book2 from '@/components/reader/Book2'
+import Book3 from '@/components/reader/Book3'
+import Book4 from '@/components/reader/Book4'
+import Book5 from '@/components/reader/Book5'
 import Graph from '@/components/graph/Graph'
 
 Vue.use(Router)
@@ -34,6 +37,18 @@ export default new Router({
         {
           path: 'book2',
           component: Book2
+        },
+        {
+          path: 'book3',
+          component: Book3
+        },
+        {
+          path: 'book4',
+          component: Book4
+        },
+        {
+          path: 'book5',
+          component: Book5
         }
       ]
     },
