@@ -6,6 +6,10 @@ import Reader from '@/components/reader/Reader'
 import Book1 from '@/components/reader/Book1'
 import Book2 from '@/components/reader/Book2'
 import Book3 from '@/components/reader/book3/Book3'
+import Book3Contents from '@/components/reader/book3/Contents'
+import Book3Element1 from '@/components/reader/book3/Element1'
+import Book3Element2 from '@/components/reader/book3/Element2'
+import Book3Element3 from '@/components/reader/book3/Element3'
 import Book4 from '@/components/reader/Book4'
 import Book5 from '@/components/reader/Book5'
 import Element from '@/components/reader/Element'
@@ -45,7 +49,25 @@ export default new Router({
         },
         {
           path: 'book3',
-          component: Book3
+          component: Book3,
+          children: [
+            {
+              path: '',
+              component: Book3Contents
+            },
+            {
+              path: 'e1',
+              component: Book3Element1
+            },
+            {
+              path: 'e2',
+              component: Book3Element2
+            },
+            {
+              path: 'e3',
+              component: Book3Element3
+            }
+          ]
         },
         {
           path: 'book4',
