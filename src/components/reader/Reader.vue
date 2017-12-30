@@ -1,13 +1,8 @@
 <template>
   <div>
-    <div class="book-nav">
-        <b-button to='/reader/book1'>Book 1</b-button>
-        <b-button to='/reader/book2'>Book 2</b-button>
-        <b-button>Book 3</b-button>
-        <b-button>Book 4</b-button>
-        <b-button>Book 5</b-button>
-    </div>
+    <book-nav />
     <router-view />    
+    <book-nav />
   </div>
 </template>
 
@@ -31,5 +26,14 @@
     border: 1px solid #35495e;
     box-shadow: none;
   }
-
 </style>
+
+<script>
+  import Navigation from './Navigation.vue'
+
+  export default {
+    components: {
+      bookNav: Navigation
+    }
+  }
+</script>
