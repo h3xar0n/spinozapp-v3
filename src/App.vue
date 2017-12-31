@@ -26,7 +26,7 @@
     text-align: center;
     color: #2c3e50;
     padding-top: 65px;
-    background-color: #fdf3f3;
+    background-image: linear-gradient(-180deg,#fff 33%,#fbfbfb 100%);
     min-height: 100%;
   }
 

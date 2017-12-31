@@ -63,6 +63,7 @@
     padding: 0;
     margin: 0;
     background-color: white;
+    box-shadow: 2px 2px #f7f7f7;
   }
 
 </style>
