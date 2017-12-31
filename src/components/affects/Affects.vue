@@ -215,54 +215,33 @@ ul {
   text-align: left
 }
 
-.main-ideas {
-  background-color: #969a9f;
-  /* margin-bottom: 10px; */
+.main-ideas, .actions, .passions {
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
 }
 
 .actions {
-  background-color: #969a9f;
   padding: 2px;
 }
 
-.actions button, .main-ideas button {
-  background-color: #e5f0f9;
+.actions button, .main-ideas button, .passions button {
+  background-color: #cbdeee;
   color: #35495e;
-  border: none;
-}
-
-.passions {
-  background-color: white;
-}
-
-.passions button {
-  background-color: #969a9f;
   border: none;
 }
 
 .affect-graph button {
   width: 120px;
   margin: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
-.affect-graph button:hover {
+.affect-graph button:hover, .btn-secondary:not([disabled]):not(.disabled):active {
   background-color: white;
   color: black;
   box-shadow: 2px 2px 2px 2px #e5f0f9;
 }
-
-.passions button:hover {
-  color: white;
-  background-color: rgb(141, 141, 141);
-  box-shadow: 1px 1px 1px 1px #969a9f;
-}
-
-.btn-secondary:not([disabled]):not(.disabled):active {
-  background-color: white;
-  color: #e5f0f9;
-  box-shadow: 1px 1px 1px 1px;
-} 
 
 /* media query for phone */
 </style>
