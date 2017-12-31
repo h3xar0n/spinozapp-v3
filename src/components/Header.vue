@@ -23,8 +23,14 @@
     width: auto;
   }
 
-  a.navbar-brand {
+  a.navbar-brand, a.navbar-brand:focus {
     padding-bottom: 0;
+    color: black;
+  }
+
+  a.navbar-brand:hover {
+    color: #f6be0b;
+    transition: 0.2s;
   }
 
   .main-nav {
@@ -34,17 +40,21 @@
   }
 
   .btn-secondary {
-    background-color: #35495e;
+    background: none;
+    color: black;
     margin: 10px;
   }
 
   .btn-secondary:hover {
-    background-color: #597da1;
+    color: #f6be0b;
+    border-color: #f6be0b;
+    transition: 0.2s;
   }
 
   .btn-secondary:not([disabled]):not(.disabled).active {
-    background-color: #41b883;
-    border: 1px solid #35495e;
+    background-color:#f6be0b;
+    border: 1px solid #f6be0b;
+    color: white;
     box-shadow: none;
   }
 
@@ -52,7 +62,7 @@
     z-index: 3;
     padding: 0;
     margin: 0;
-    background-color: #35495e;
+    background-color: white;
   }
 
 </style>
