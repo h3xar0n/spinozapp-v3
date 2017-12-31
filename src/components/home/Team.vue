@@ -21,6 +21,10 @@
 
 <style>
   .media {
-    padding: 40px 80px 0 80px;
+    padding: 40px 80px 40px 80px;
+  }
+  ul {
+    background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
+    padding: 20px 0;
   }
 </style>

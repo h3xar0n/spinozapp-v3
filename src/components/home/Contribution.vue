@@ -32,5 +32,6 @@
   .contribution-info img {
     height: 100px;
     width: auto;
+    background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
   }
 </style>
