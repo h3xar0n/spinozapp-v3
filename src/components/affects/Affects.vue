@@ -241,6 +241,7 @@ ul {
   background-color: white;
   color: black;
   box-shadow: 2px 2px 2px 2px #e5f0f9;
+  cursor: pointer;
 }
 
 /* media query for phone */
