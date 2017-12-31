@@ -3,12 +3,60 @@
     <div class="container">
       <!-- affect graph and details -->
       <div class="row">
-        <div class="affect-graph col-xs-12 col-md-8">
-          <b-button @click="affect = 'passion'">Passion</b-button>
-          <b-button @click="affect = 'action'">Action</b-button>
-          <b-button @click="affect = 'sorrow'">Sorrow</b-button>
-          <b-button @click="affect = 'joy'">Joy</b-button>
-          <b-button @click="affect = 'love'">Love</b-button>
+        <div class="affect-graph col-xs-12 col-md-8 row">
+          <div class="main-ideas col-xs-12">
+            <b-button @click="affect = 'affect'">Affect</b-button>
+            <b-button @click="affect = 'desire'">Desire</b-button>
+            <b-button @click="affect = 'intuition'">Intuition</b-button>  
+          </div>
+          <div class="passions col-xs-8">
+            <div>
+              <b-button @click="affect = 'sad'">Sad Passions</b-button>
+              <b-button @click="affect = 'joy'">Joyful Passions</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'hate'">Hatred</b-button>
+              <b-button @click="affect = 'love'">Love</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'envy'">Envy</b-button>
+              <b-button @click="affect = 'compassion'">Compassion</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'fear'">Fear</b-button>
+              <b-button @click="affect = 'hope'">Hope</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'humility'">Humility</b-button>
+              <b-button @click="affect = 'pride'">Pride</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'shame'">Shame</b-button>
+              <b-button @click="affect = 'honor'">Honor</b-button>
+            </div>
+          </div>
+          <div class="actions col-xs-4">
+            <div>
+              <b-button @click="affect = 'action'">Action</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'nobility'">Nobility</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'mercy'">Mercy</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'courage'">Courage</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'fortitude'">Fortitude</b-button>
+            </div>
+            <div>
+              <b-button @click="affect = 'courtesy'">Courtesy</b-button>
+            </div>
+          </div>
+          
+        
         </div>
         <div class="detail-card col-xs-12 col-md-4">
           <div v-if="affect === 'passion'">
@@ -140,7 +188,6 @@
             <b-button to="/reader" variant="primary">Read in the Ethics</b-button>
           </b-card>
         </div>
-        
       </div>
     </div>
   </div>
@@ -167,4 +214,55 @@ ul {
   list-style: none;
   text-align: left
 }
+
+.main-ideas {
+  background-color: #969a9f;
+  /* margin-bottom: 10px; */
+}
+
+.actions {
+  background-color: #969a9f;
+  padding: 2px;
+}
+
+.actions button, .main-ideas button {
+  background-color: #e5f0f9;
+  color: #35495e;
+  border: none;
+}
+
+.passions {
+  background-color: white;
+}
+
+.passions button {
+  background-color: #969a9f;
+  border: none;
+}
+
+.affect-graph button {
+  width: 120px;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.affect-graph button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 2px 2px #e5f0f9;
+}
+
+.passions button:hover {
+  color: white;
+  background-color: rgb(141, 141, 141);
+  box-shadow: 1px 1px 1px 1px #969a9f;
+}
+
+.btn-secondary:not([disabled]):not(.disabled):active {
+  background-color: white;
+  color: #e5f0f9;
+  box-shadow: 1px 1px 1px 1px;
+} 
+
+/* media query for phone */
 </style>
