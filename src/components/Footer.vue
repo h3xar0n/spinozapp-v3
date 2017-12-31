@@ -18,8 +18,14 @@
 
 <style scoped>
   footer {
-    height: 120px;
+    min-height: 120px;
     padding: 25px;
+  }
+
+  @media (max-width: 770px) {
+    footer {
+      height: 38vh;
+    }
   }
 
   .copyleft {

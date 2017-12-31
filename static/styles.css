@@ -10,3 +10,13 @@ h1, h2, h3, h4, h5, h6, a, p {
   color: white;
   background-color: #313d3e;
 }
+
+.dark-block .btn {
+  background-color: #313d3e;
+}
+
+.dark-block .btn:hover {
+  background-color: #f6be0b;
+  border-color: white;
+  color: white;
+}
