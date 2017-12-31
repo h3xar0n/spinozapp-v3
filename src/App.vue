@@ -27,6 +27,7 @@
     color: #2c3e50;
     padding-top: 65px;
     background-color: #fdf3f3;
+    min-height: 100%;
   }
 
   .view {
