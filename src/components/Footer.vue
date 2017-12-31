@@ -4,7 +4,8 @@
       &#9774; 2017-2018 Aron Eidelman
     </span>
     <span class="right-icons">
-      <a href="https://gitlab.com/eideldev/spinozapp">
+      <a href="https://gitlab.com/eideldev/spinozapp"
+         target="_blank">
         <i class="devicon-gitlab-plain"></i>
       </a>  
     </span>
@@ -22,11 +23,11 @@
   .legal {
     padding-top: 10px;
     position: absolute;
-    left:100px;
+    left:10vw;
   }
   .right-icons {
     position: absolute;
-    right: 100px;
+    right: 10vw;
   }
 
   .right-icons a {
