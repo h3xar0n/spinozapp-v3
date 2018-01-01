@@ -1,13 +1,20 @@
 <template>
   <b-container class="features-info dark-block">
+
+    <div @mouseover="hover = true" @mouseout="hover = false" class="fade-block">
+      <transition name="fade" mode="in-out">
+        <span v-if="hover === false">Omnia praeclarum tam difficilia</span>
+      </transition>
+      <transition name="fade" mode="out-in">
+        <span v-if="hover === true">Everything noble is difficult</span>
+      </transition>
+    </div>
+
     <b-row>
       <b-col sm="12" md="4">
         <h1>⚡</h1>
         <h2>Affects</h2>
-        <p>Customize your reading 
-          experience by focusing 
-          on the affects that 
-          pertain the most to you.</p>
+        <p>Customize your reading experience by focusing on the affects that pertain the most to you.</p>
         <br>
         <br>
         <br>
@@ -35,7 +42,38 @@
   </b-container>
 </template>
 
+<script>
+  export default {
+    data() {
+      return {
+        hover: false
+      }
+    }
+  }
+
+</script>
+
 <style>
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter,
+  .fade-leave-to
+  /* .fade-leave-active below version 2.1.8 */
+  {
+    opacity: 0
+  }
+  .fade-block {
+    position: relative;
+    margin: 80px;
+  }
+  .fade-block span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   .features-info {
     max-width: 100vw;
     padding: 22px 10% 80px;
@@ -68,4 +106,5 @@
       margin: auto 10%;
     }
   }
+
 </style>
