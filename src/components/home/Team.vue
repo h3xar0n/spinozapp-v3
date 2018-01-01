@@ -19,12 +19,13 @@
   </ul>
 </template>
 
-<style>
+<style scoped>
   .media {
     padding: 40px 80px 40px 80px;
   }
   ul {
     background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
-    padding: 20px 0;
+    padding: 66px 0;
+    margin-bottom: 0;
   }
 </style>
