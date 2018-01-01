@@ -38,9 +38,7 @@
 <style>
   .features-info {
     max-width: 100vw;
-    padding-bottom: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 22px 10% 80px;
     position: relative;
   }
 

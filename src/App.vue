@@ -28,8 +28,8 @@
     padding-top: 65px;
     min-height: 100%;
   }
-
+/* 
   .view {
     padding-bottom: 100px
-  }
+  } */
 </style>

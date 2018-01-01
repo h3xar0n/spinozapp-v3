@@ -4,7 +4,7 @@
     <features />
     <team />
     <contribution />
-    <external />
+    <!-- <external /> -->
     <!-- books -->
     <!-- contact -->
   </div>
