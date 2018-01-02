@@ -21,7 +21,7 @@ p {
 
 .dark-block {
   color: white;
-  background-color: #313d3e;
+  background-color: #313d3e!important;
 }
 
 .dark-block .btn {

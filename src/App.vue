@@ -20,13 +20,15 @@
 </script>
 
 <style>
+  @import './assets/css/styles.css';
+
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     padding-top: 65px;
-    min-height: 100%;
+    min-height: 100vh;
   }
 /* 
   .view {
