@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/home/Home'
 import Affects from '@/components/affects/Affects'
 import Reader from '@/components/reader/Reader'
+import BookMenu from '@/components/reader/Navigation'
 import Book1 from '@/components/reader/Book1'
 import Book2 from '@/components/reader/Book2'
 import Book3 from '@/components/reader/book3/Book3'
@@ -37,7 +38,7 @@ export default new Router({
       children: [
         {
           path: '',
-          component: Element
+          component: BookMenu
         },
         {
           path: 'book1',

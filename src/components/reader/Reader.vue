@@ -1,8 +1,6 @@
 <template>
   <div>
-    <book-nav />
     <router-view />    
-    <book-nav />
   </div>
 </template>
 
@@ -29,11 +27,4 @@
 </style>
 
 <script>
-  import Navigation from './Navigation.vue'
-
-  export default {
-    components: {
-      bookNav: Navigation
-    }
-  }
 </script>

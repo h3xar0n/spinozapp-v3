@@ -3,17 +3,17 @@
 
     <div @mouseover="hover = true" @mouseout="hover = false" class="fade-block">
       <transition name="fade" mode="in-out">
-        <span v-if="hover === false">Omnia praeclarum tam difficilia</span>
+        <span v-if="hover === false">Bonum quod unusquisque qui sectatur virtutem, sibi appetit, reliquis hominibus etiam cupiet et eo magis quo majorem Dei habuerit cognitionem.</span>
       </transition>
       <transition name="fade" mode="out-in">
-        <span v-if="hover === true">Everything noble is difficult</span>
+        <span v-if="hover === true">The good which people who pursue virtue aim at for themselves, they will also desire for the rest of humanity, and all the more as they acquire a greater understanding of Nature</span>
       </transition>
     </div>
 
     <b-row>
       <b-col sm="12" md="4">
         <h1>⚡</h1>
-        <h2>Affects</h2>
+        <h3>Affects</h3>
         <p>Customize your reading experience by focusing on the affects that pertain the most to you.</p>
         <br>
         <br>
@@ -22,7 +22,7 @@
       </b-col>
       <b-col sm="12" md="4">
         <h1>📖</h1>
-        <h2>Reader</h2>
+        <h3>Reader</h3>
         <p>Read each element in the Ethics with its dependencies and involvements in sight at all times</p>
         <br>
         <br>
@@ -31,7 +31,7 @@
       </b-col>
       <b-col sm="12" md="4">
         <h1>🌐</h1>
-        <h2>Graph</h2>
+        <h3>Graph</h3>
         <p>Navigate the Ethics with an interactive visualization of the connections between the elements</p>
         <br>
         <br>
@@ -66,7 +66,8 @@
   }
   .fade-block {
     position: relative;
-    margin: 80px;
+    margin: 80px 0;
+    font-size: 12px;
   }
   .fade-block span {
     position: absolute;
