@@ -1,20 +1,14 @@
 <template>
   <b-navbar toggleable="md" type="dark" class="main-nav">
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand to="/">
       <img src="../assets/spinoza-menu.png" alt="" class="spinoza-img"> spinozapp
     </b-navbar-brand>
-
-    <b-collapse is-nav id="nav_collapse">
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-button to="/affects">Affects</b-button>
-        <b-button to="/reader">Reader</b-button>
-        <b-button to="/graph">Graph</b-button>
-      </b-navbar-nav>
-    </b-collapse>
+    <div class="button-group">
+      <b-button to="/affects">Affects</b-button>
+      <b-button to="/reader">Reader</b-button>
+      <b-button to="/graph">Graph</b-button>
+    </div>
   </b-navbar>
-
 </template>
 
 <style scoped>
@@ -64,6 +58,18 @@
     margin: 0;
     background-color: white;
     box-shadow: 2px 2px #f7f7f7;
+  }
+
+  @media (max-width: 400px) {
+    .spinoza-img {
+      height: 30px;
+    }
+    a {
+      font-size: 10px;
+    }
+    .btn-secondary {
+      margin: 0px;
+    }
   }
 
 </style>
