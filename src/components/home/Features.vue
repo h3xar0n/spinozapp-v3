@@ -1,14 +1,14 @@
 <template>
   <b-container class="features-info dark-block">
 
-    <div @mouseover="hover = true" @mouseout="hover = false" class="fade-block">
+    <!-- <div @mouseover="hover = true" @mouseout="hover = false" class="fade-block">
       <transition name="fade" mode="in-out">
         <span v-if="hover === false">Bonum quod unusquisque qui sectatur virtutem, sibi appetit, reliquis hominibus etiam cupiet et eo magis quo majorem Dei habuerit cognitionem.</span>
       </transition>
       <transition name="fade" mode="out-in">
         <span v-if="hover === true">The good which people who pursue virtue aim at for themselves, they will also desire for the rest of humanity, and all the more as they acquire a greater understanding of Nature</span>
       </transition>
-    </div>
+    </div> -->
 
     <b-row>
       <b-col sm="12" md="4">
