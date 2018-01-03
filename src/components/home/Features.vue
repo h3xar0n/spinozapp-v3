@@ -39,7 +39,7 @@
         <b-button to="/graph">Graph</b-button>
       </b-col>
     </b-row>
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -80,32 +80,26 @@
     padding: 22px 10% 80px;
     position: relative;
   }
-
   .features-info .col-sm-12 {
     padding-top: 40px;
   }
-
   .features-info p {
     text-align: left;
     widows: 4;
     margin: 0 auto;
   }
-
   .features-info a {
     position: absolute;
     bottom: 0;
     width: 30%;
     left: 35%;
   }
-
   .col {
     margin-top: 30px;
   }
-
   @media (max-width: 770px) {
     .features-info .col-sm-12 p {
       margin: auto 10%;
     }
   }
-
 </style>

@@ -24,6 +24,7 @@
 
   a.navbar-brand:hover {
     color: #f6be0b;
+    background-color: none;
     transition: 0.2s;
   }
 
@@ -42,6 +43,7 @@
   .btn-secondary:hover {
     color: #f6be0b;
     border-color: #f6be0b;
+    background-color: white;
     transition: 0.2s;
   }
 
