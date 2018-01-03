@@ -12,6 +12,11 @@
 </template>
 
 <style scoped>
+  .main-nav {
+    display: flex;
+    justify-content: space-between!important;
+  }
+
   .spinoza-img {
     height: 60px;
     width: auto;
@@ -42,7 +47,7 @@
     box-shadow: 2px 2px #f7f7f7;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 524px) {
     .spinoza-img {
       height: 30px;
     }

@@ -20,8 +20,6 @@
 </script>
 
 <style>
-  @import './assets/css/styles.css';
-
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -30,8 +28,5 @@
     padding-top: 65px;
     min-height: 100vh;
   }
-/* 
-  .view {
-    padding-bottom: 100px
-  } */
+  @import './assets/css/styles.css';
 </style>

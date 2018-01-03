@@ -74,3 +74,10 @@ a {
   background-color: #313d3e;
   color: white;
 }
+
+@media (max-width: 595px) {
+  .btn-secondary {
+    font-size: 8px;
+    width: 70px;
+  }
+}

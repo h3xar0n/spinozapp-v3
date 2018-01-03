@@ -11,7 +11,7 @@
         </div>
         <div class="affections">
           <div class="sad passions">
-            <b-button @click="affect = 'sad'">Sad Passions</b-button>
+            <b-button @click="affect = 'sad'">Sadness</b-button>
             <b-button @click="affect = 'hate'">Hatred</b-button>
             <b-button @click="affect = 'envy'">Envy</b-button>
             <b-button @click="affect = 'fear'">Fear</b-button>
@@ -19,7 +19,7 @@
             <b-button @click="affect = 'shame'">Shame</b-button>
           </div>
           <div class="joyful passions">
-            <b-button @click="affect = 'joy'">Joyful Passions</b-button>
+            <b-button @click="affect = 'joy'">Joy</b-button>
             <b-button @click="affect = 'love'">Love</b-button>
             <b-button @click="affect = 'compassion'">Compassion</b-button>
             <b-button @click="affect = 'hope'">Hope</b-button>
