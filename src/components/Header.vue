@@ -11,7 +11,7 @@
   </b-navbar>
 </template>
 
-<style scoped>
+<style>
   .main-nav {
     display: flex;
     justify-content: space-between!important;
