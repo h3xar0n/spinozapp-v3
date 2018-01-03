@@ -1,5 +1,5 @@
 <template>
-  <b-container class="features-info dark-block">
+  <div class="features-info dark-block">
 
     <!-- <div @mouseover="hover = true" @mouseout="hover = false" class="fade-block">
       <transition name="fade" mode="in-out">
