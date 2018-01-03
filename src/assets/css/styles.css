@@ -12,7 +12,11 @@ h3 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+a {
+  color: #f6be0b;
 }
 
 .approach {

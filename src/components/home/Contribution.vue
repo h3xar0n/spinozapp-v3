@@ -79,7 +79,7 @@
   }
 
   .progress-bar {
-    background-color: #f6be0b;
+    background-color: #f6be0b!important;
   }
 
   .code-tools {
