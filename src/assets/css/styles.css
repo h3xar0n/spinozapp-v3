@@ -28,10 +28,6 @@ a {
   background-color: #313d3e!important;
 }
 
-.dark-block .btn {
-  background-color: #313d3e;
-}
-
 .dark-block .btn:hover {
   background-color: #f6be0b;
   border-color: white;
@@ -39,10 +35,12 @@ a {
 }
 
 .btn-secondary {
+  border: 1px solid black;
   border-radius: 83px;
   width: 92px;
+  vertical-align: center;
   font-size: 13px;
-  padding: 8px;
+  padding: 20px;
   text-transform: uppercase;
   background: none;
   color: black;
