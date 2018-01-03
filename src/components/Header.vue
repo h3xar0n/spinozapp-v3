@@ -23,7 +23,7 @@
   .main-nav {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     top: 0;
     width: 100%;
     z-index: 3;
@@ -32,7 +32,6 @@
     background-color: white;
     box-shadow: 2px 2px #f7f7f7;
   }
-
   .spinoza-img {
     height: 60px;
     width: auto;
@@ -64,13 +63,11 @@
     text-transform: uppercase;
     background: none;
   }
-
   .button:hover {
     color: #f6be0b;
     border-color: #f6be0b;
     transition: 0.2s;
   }
-
   .button:active, .button:focus {
     background-color: #f6be0b;
     border: 1px solid #f6be0b;
