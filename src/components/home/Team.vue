@@ -1,7 +1,7 @@
 <template>
   <ul class="list-unstyled">
     <div class="team-member">
-      <img src="../../assets/aron.jpg" alt="" class="team-image">
+      <img src="../../assets/adelina.jpg" alt="" class="team-image">
       <div class="team-content">
         <h5>Adelina</h5>
         <p>A makeup artist and hairstylist with a penchant for UI design, color theory, and painting, Adelina
