@@ -3,9 +3,8 @@
     <jumbotron />
     <features />
     <team />
+    <external />
     <contribution />
-    <!-- <external /> -->
-    <!-- books -->
     <!-- contact -->
   </div>
 </template>

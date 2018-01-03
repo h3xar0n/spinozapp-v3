@@ -37,3 +37,40 @@ a {
   border-color: white;
   color: white;
 }
+
+.btn-secondary {
+  border-radius: 83px;
+  width: 92px;
+  font-size: 13px;
+  padding: 8px;
+  text-transform: uppercase;
+  background: none;
+  color: black;
+  margin: 10px;
+}
+
+.btn-secondary:hover {
+  color: #f6be0b;
+  border-color: #f6be0b;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.btn.active {
+  background-color:#f6be0b;
+  border: 1px solid #f6be0b;
+  color: white;
+  box-shadow: none;
+}
+
+.btn-secondary:not([disabled]):not(.disabled).active {
+  background-color:#f6be0b !important;
+  border: 1px solid #f6be0b !important;
+  color: white !important;
+  box-shadow: none;
+}
+
+.dark-block .btn {
+  background-color: #313d3e;
+  color: white;
+}

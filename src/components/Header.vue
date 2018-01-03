@@ -34,26 +34,6 @@
     width: 100%
   }
 
-  .btn-secondary {
-    background: none;
-    color: black;
-    margin: 10px;
-  }
-
-  .btn-secondary:hover {
-    color: #f6be0b;
-    border-color: #f6be0b;
-    background-color: white;
-    transition: 0.2s;
-  }
-
-  .btn-secondary:not([disabled]):not(.disabled).active {
-    background-color:#f6be0b;
-    border: 1px solid #f6be0b;
-    color: white;
-    box-shadow: none;
-  }
-
   nav.navbar.main-nav.navbar-dark.navbar-expand-md {
     z-index: 3;
     padding: 0;
