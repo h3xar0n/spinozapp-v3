@@ -1,29 +1,31 @@
 <template>
-  <ul class="list-unstyled">
-    <div class="team-member">
-      <img src="../../assets/adelina.jpg" alt="" class="team-image">
-      <div class="team-content">
-        <h5>Adelina</h5>
-        <p>A makeup artist and hairstylist with a penchant for UI design, color theory, and painting, Adelina
-          guides the visual design choices on Spinozapp. Her philosophical interests include the distinct conceptions of virtue
-          in Spinoza and Machiavelli, as well as how the Ethics applies to aesthetics.
-        </p>
+  <div class="features-info">
+    <ul class="list-unstyled">
+      <div class="team-member">
+        <img src="../../assets/adelina.jpg" alt="" class="team-image">
+        <div class="team-content">
+          <h5>Adelina</h5>
+          <p>A makeup artist and hairstylist with a penchant for UI design, color theory, and painting, Adelina
+            guides the visual design choices on Spinozapp. Her philosophical interests include the distinct conceptions of virtue
+            in Spinoza and Machiavelli, as well as how the Ethics applies to aesthetics.
+          </p>
+        </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="team-member">
-      <img src="../../assets/aron.jpg" alt="" class="team-image">
-      <div class="team-content">
-        <h5>Aron</h5>
-        <p>A software engineer who sees inorganic life within lines of code, Aron leads development, 
-          system design, and content for Spinozapp. His interests include the application of
-          Spinoza's ontology to computer science, and how technology can help people foster collaboration and reasoning skills.
-        </p>
+      <br>
+      <br>
+      <br>
+      <div class="team-member">
+        <img src="../../assets/aron.jpg" alt="" class="team-image">
+        <div class="team-content">
+          <h5>Aron</h5>
+          <p>A software engineer who sees inorganic life within lines of code, Aron leads development, 
+            system design, and content for Spinozapp. His interests include the application of
+            Spinoza's ontology to computer science, and how technology can help people foster collaboration and reasoning skills.
+          </p>
+        </div>
       </div>
-    </div>
-  </ul>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
@@ -37,8 +39,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80vw;
-    margin: 0 10vw;
+    width: 67vw;
+    margin: 0 auto;
+  }
+  @media (max-width: 1060px) {
+    .team-member {
+      width: 80vw;
+      flex-basis: 426px;
+    }
   }
   .team-image {
     border-radius: 20px;

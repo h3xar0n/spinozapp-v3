@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <div class="external-videos"></div>
+  <div class="features-info">
+    <div class="external-videos">
+      
+    </div>
   </div>
 </template>
 

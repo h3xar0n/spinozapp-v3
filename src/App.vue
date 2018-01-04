@@ -28,5 +28,6 @@
     padding-top: 65px;
     min-height: 100vh;
   }
+  
   @import './assets/css/styles.css';
 </style>

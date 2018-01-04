@@ -1,34 +1,26 @@
 <template>
   <div class="features-info dark-block">
-    <b-row>
-      <b-col sm="12" md="4">
-        <h1>⚡</h1>
-        <h3>Affects</h3>
-        <p>Customize your reading experience by focusing on the affects that pertain the most to you.</p>
-        <br>
-        <br>
-        <br>
-        <router-link class="button" to="/affects">Affects</router-link >
-      </b-col>
-      <b-col sm="12" md="4">
-        <h1>📖</h1>
-        <h3>Reader</h3>
-        <p>Read each element in the Ethics with its dependencies and involvements in sight at all times</p>
-        <br>
-        <br>
-        <br>
-        <router-link class="button" to="/reader">Reader</router-link>
-      </b-col>
-      <b-col sm="12" md="4">
-        <h1>🌐</h1>
-        <h3>Graph</h3>
-        <p>Navigate the Ethics with an interactive visualization of the connections between the elements</p>
-        <br>
-        <br>
-        <br>
-        <router-link class="button" to="/graph">Graph</router-link>
-      </b-col>
-    </b-row>
+    <div class="info-column">
+      <h1>⚡</h1>
+      <h3>Affects</h3>
+      <p>Customize your reading experience by focusing on the affects that pertain the most to you.</p>
+      <br>
+      <router-link class="button" to="/affects">Affects</router-link >
+    </div>
+    <div class="info-column">
+      <h1>📖</h1>
+      <h3>Reader</h3>
+      <p>Read each element in the Ethics with its dependencies and involvements in sight at all times</p>
+      <br>
+      <router-link class="button" to="/reader">Reader</router-link>
+    </div>
+    <div class="info-column">
+      <h1>🌐</h1>
+      <h3>Graph</h3>
+      <p>Navigate the Ethics with an interactive visualization of the connections between the elements</p>
+      <br>
+      <router-link class="button" to="/graph">Graph</router-link>
+    </div>
   </div>
 </template>
 
@@ -68,7 +60,9 @@
   .features-info {
     max-width: 100vw;
     padding: 22px 10% 80px;
-    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .features-info .col-sm-12 {
     padding-top: 40px;
@@ -78,14 +72,16 @@
     widows: 4;
     margin: 0 auto;
   }
-  .features-info a {
-    position: absolute;
-    bottom: 0;
-    width: 30%;
-    left: 35%;
-  }
-  .col {
+  .info-column {
     margin-top: 30px;
+  }
+  .info-column p {
+    width: 229px;
+  }
+  @media (max-width: 1080px) {
+    .info-column p {
+      width: 100%;
+    }
   }
   .button {
     text-decoration: none;
