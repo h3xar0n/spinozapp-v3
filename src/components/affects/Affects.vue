@@ -165,9 +165,12 @@
         <transition name="fade">
           <div v-if="affect === 'hope'">
             <h1>Hope</h1>
-            <p>Stuff</p>
-            <p>Stuff</p>
-            <img class="stuff" src="https://avatars0.githubusercontent.com/u/21048592?s=400&v=4" alt="">
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
           </div>
         </transition>
         <transition name="fade">
