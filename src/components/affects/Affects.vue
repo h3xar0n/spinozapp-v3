@@ -415,6 +415,7 @@
     border-color: white;
     cursor: pointer;
     box-shadow: none;
+    transition: 0.3s;
   }
 
   .affect-graph button:focus {
