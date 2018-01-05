@@ -1,6 +1,7 @@
 <template>
   <div>
     <router-view />    
+    <construction></construction>
   </div>
 </template>
 
@@ -27,4 +28,11 @@
 </style>
 
 <script>
+import Construction from '../Construction'
+
+export default {
+  components: {
+    construction: Construction
+  }
+}
 </script>
