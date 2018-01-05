@@ -39,8 +39,6 @@
 </template>
 
 <script>
-/* eslint-disable */
-
 </script>
 
 <style scoped>
