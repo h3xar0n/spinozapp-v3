@@ -11,6 +11,7 @@ import Book3Contents from '@/components/reader/book3/Contents'
 import Book3Element1 from '@/components/reader/book3/Element1'
 import Book3Element2 from '@/components/reader/book3/Element2'
 import Book3Element3 from '@/components/reader/book3/Element3'
+import Book3Definition1 from '@/components/reader/book3/definitions/3definition1.vue'
 import Book4 from '@/components/reader/Book4'
 import Book5 from '@/components/reader/Book5'
 import Element from '@/components/reader/Element'
@@ -52,6 +53,10 @@ export default new Router({
           path: 'book3',
           component: Book3,
           children: [
+            {
+              path: 'definition1',
+              component: Book3Definition1
+            },
             {
               path: '',
               component: Book3Contents

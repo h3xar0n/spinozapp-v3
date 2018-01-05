@@ -440,6 +440,9 @@
     .detail-card {
       width: 470px;
     }
+    .affect-selection {
+      min-height: 400px;
+    }
   }
 
   @media (max-width: 400px) {
