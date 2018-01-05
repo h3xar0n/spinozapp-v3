@@ -1,51 +1,268 @@
 <template>
   <div class="approach">
-    
     <!-- affect graph and details -->
     <div class="affect-selection">
       <div class="affect-graph">
         <div class="main-ideas">
-          <b-button @click="affect = 'affect'">Affect</b-button>
-          <b-button @click="affect = 'desire'">Desire</b-button>
-          <b-button @click="affect = 'intuition'">Intuition</b-button>
+          <button @click="affect = 'affect'">Affect</button>
+          <button @click="affect = 'desire'">Desire</button>
+          <button @click="affect = 'intuition'">Intuition</button>
         </div>
         <div class="affections">
           <div class="sad passions">
-            <b-button @click="affect = 'sad'">Sadness</b-button>
-            <b-button @click="affect = 'hate'">Hatred</b-button>
-            <b-button @click="affect = 'envy'">Envy</b-button>
-            <b-button @click="affect = 'fear'">Fear</b-button>
-            <b-button @click="affect = 'humility'">Humility</b-button>
-            <b-button @click="affect = 'shame'">Shame</b-button>
+            <button @click="affect = 'sad'">Sadness</button>
+            <button @click="affect = 'hate'">Hatred</button>
+            <button @click="affect = 'envy'">Envy</button>
+            <button @click="affect = 'fear'">Fear</button>
+            <button @click="affect = 'humility'">Humility</button>
+            <button @click="affect = 'shame'">Shame</button>
           </div>
           <div class="joyful passions">
-            <b-button @click="affect = 'joy'">Joy</b-button>
-            <b-button @click="affect = 'love'">Love</b-button>
-            <b-button @click="affect = 'compassion'">Compassion</b-button>
-            <b-button @click="affect = 'hope'">Hope</b-button>
-            <b-button @click="affect = 'pride'">Pride</b-button>
-            <b-button @click="affect = 'honor'">Honor</b-button>
+            <button @click="affect = 'joy'">Joy</button>
+            <button @click="affect = 'love'">Love</button>
+            <button @click="affect = 'compassion'">Compassion</button>
+            <button @click="affect = 'hope'">Hope</button>
+            <button @click="affect = 'pride'">Pride</button>
+            <button @click="affect = 'honor'">Honor</button>
           </div>
           <div class="actions">
-            <b-button @click="affect = 'action'">Action</b-button>
-            <b-button @click="affect = 'nobility'">Nobility</b-button>
-            <b-button @click="affect = 'mercy'">Mercy</b-button>
-            <b-button @click="affect = 'courage'">Courage</b-button>
-            <b-button @click="affect = 'fortitude'">Fortitude</b-button>
-            <b-button @click="affect = 'courtesy'">Courtesy</b-button>
+            <button @click="affect = 'action'">Action</button>
+            <button @click="affect = 'nobility'">Nobility</button>
+            <button @click="affect = 'mercy'">Mercy</button>
+            <button @click="affect = 'courage'">Courage</button>
+            <button @click="affect = 'fortitude'">Fortitude</button>
+            <button @click="affect = 'courtesy'">Courtesy</button>
           </div>
         </div>
-
       </div>
       <div class="detail-card">
-        <h1>Stuff!</h1>
-        <p>Stuff</p>
-        <p>Stuff</p>
-        <img class="stuff" src="https://avatars0.githubusercontent.com/u/21048592?s=400&v=4" alt="">
+        <transition name="fade">
+          <div v-if="affect === 'affect'">
+            <h1>Affect</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'desire'">
+            <h1>Desire</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Vu4C04W52BQ" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.</p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'intuition'">
+            <h1>Intuition</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/uPG2GDjeqtM" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'sad'">
+            <h1>Sorrow</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PaZ1EmPOE_k" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur.</p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'hate'">
+            <h1>Hatred</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/coiCkmcKjX8" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'envy'">
+            <h1>Envy</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'fear'">
+            <h1>Fear</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'humility'">
+            <h1>Humility</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'shame'">
+            <h1>Shame</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'joy'">
+            <h1>Joy</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'love'">
+            <h1>Love</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'compassion'">
+            <h1>Compassion</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'hope'">
+            <h1>Hope</h1>
+            <p>Stuff</p>
+            <p>Stuff</p>
+            <img class="stuff" src="https://avatars0.githubusercontent.com/u/21048592?s=400&v=4" alt="">
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'pride'">
+            <h1>Pride</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'honor'">
+            <h1>Honor</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'action'">
+            <h1>Action</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'nobility'">
+            <h1>Nobility</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'mercy'">
+            <h1>Mercy</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'courage'">
+            <h1>Courage</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'fortitude'">
+            <h1>Fortitude</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
+        <transition name="fade">
+          <div v-if="affect === 'courtesy'">
+            <h1>Courtesy</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+        </transition>
       </div>
     </div>
-    <div class="container">
-      <!-- affect checkbox and resolutions -->
+    <construction></construction>
+    <!-- <div class="container">
+      affect checkbox and resolutions
       <div class="row">
         <div class="col-md-4">
           <ul>
@@ -69,53 +286,51 @@
           <br>
           <span>Checked names: {{ selectedAffects }}</span>
         </div>
-        <div class="col-md-4" v-if="selectedAffects.sorrow === true">
-          <b-card title="Solution for sorrow" img-alt="Image" img-top tag="article" class="mb-2">
-            <img src="../../assets/content.png" alt="" style="max-width: 100%;">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-            <b-button to="/reader" variant="primary">Read in the Ethics</b-button>
-          </b-card>
-        </div>
-        <div class="col-md-4" v-if="selectedAffects.love === true">
-          <b-card title="Refinement for love" img-alt="Image" img-top tag="article" class="mb-2">
-            <img src="../../assets/content.png" alt="" style="max-width: 100%;">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-            <b-button to="/reader" variant="primary">Read in the Ethics</b-button>
-          </b-card>
-        </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
+  import Construction from '../Construction'
+
   export default {
     data() {
       return {
-        affect: 'passion',
+        affect: "affect",
         selectedAffects: {
           joy: false,
           sorrow: false,
           desire: false,
           love: false
         }
-      }
+      };
+    },
+    components: {
+      construction: Construction
     }
-  }
+  };
 
 </script>
 
 <style>
-.stuff {
-  width: 50px;
-}
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 1s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .stuff {
+    width: 50px;
+  }
+
   ul {
     list-style: none;
-    text-align: left
+    text-align: left;
   }
 
   .affect-selection {
@@ -171,6 +386,8 @@
     background-color: transparent;
     color: #35495e;
     border: 1px solid #35495e;
+    padding: 5px 0;
+    border-radius: 20px;
   }
 
   .affect-graph button {
@@ -197,8 +414,21 @@
     box-shadow: none;
   }
 
+  .affect-graph button:focus {
+    outline: 0;
+  }
+
   .detail-card {
     min-width: 250px;
+    position: relative
+  }
+
+  .detail-card div {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
   }
   /* media query for phone */
 
