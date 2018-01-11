@@ -37,6 +37,17 @@
       </div>
       <div class="detail-card">
         <transition name="fade">
+          <div>
+            <h1>{{ affect | capitalize }}</h1>
+            <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
+              allowfullscreen></iframe>
+            <p>
+              {{ affect }}, {{ affect }}, {{ affect }}
+            </p>
+          </div>
+        </transition>
+
+        <!-- <transition name="fade">
           <div v-if="affect === 'affect'">
             <h1>Affect</h1>
             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
@@ -260,11 +271,10 @@
               consequat.
             </p>
           </div>
-        </transition>
+        </transition> -->
       </div>
     </div>
     <div class="container">
-      <!-- affect checkbox and resolutions -->
       <div class="row">
         <div class="col-md-4">
           <ul>
