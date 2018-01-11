@@ -302,10 +302,27 @@
       return {
         affect: "affect",
         selectedAffects: {
-          joy: false,
-          sorrow: false,
+          affect: true,
           desire: false,
-          love: false
+          intuition: false,
+          sadness: false,
+          hatred: false,
+          envy: false,
+          fear: false,
+          humility: false,
+          shame: false,
+          joy: false,
+          love: false,
+          compassion: false,
+          hope: false,
+          pride: false,
+          honor: false,
+          action: false,
+          nobility: false,
+          mercy: false,
+          courage: false,
+          fortitude: false,
+          courtesy: false
         }
       };
     },
