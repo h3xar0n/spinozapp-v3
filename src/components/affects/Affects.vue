@@ -263,34 +263,25 @@
         </transition>
       </div>
     </div>
-    <construction></construction>
     <div class="container">
-      affect checkbox and resolutions
+      <!-- affect checkbox and resolutions -->
       <div class="row">
         <div class="col-md-4">
           <ul>
-            <li>
-              <input type="checkbox" id="joy" value="true" v-model="selectedAffects.joy">
-              <label for="joy">Joy</label>
-            </li>
-            <li>
-              <input type="checkbox" id="love" value="true" v-model="selectedAffects.love">
-              <label for="love">Love</label>
-            </li>
-            <li>
-              <input type="checkbox" id="john" value="true" v-model="selectedAffects.sorrow">
-              <label for="sorrow">Sorrow</label>
-            </li>
-            <li>
-              <input type="checkbox" id="mike" value="true" v-model="selectedAffects.desire">
-              <label for="desire">Desire</label>
+            <li v-for="(value, affectName) in selectedAffects">
+              <input type="checkbox" value="true" v-model="selectedAffects[affectName]">
+              <label :for="affectName">{{ affectName | capitalize }}</label>
             </li>
           </ul>
           <br>
-          <span>Checked names: {{ selectedAffects }}</span>
+          <span>Checked names:</span>
+          <ul>
+            <li v-for="(value, affectName) in selectedAffects">{{ affectName }}: {{ value }}</li>
+          </ul>
         </div>
       </div>
     </div>
+    <construction></construction>
   </div>
 </template>
 
@@ -302,10 +293,10 @@
       return {
         affect: "affect",
         selectedAffects: {
-          affect: true,
+          affect: false,
           desire: false,
           intuition: false,
-          sadness: false,
+          sad: false,
           hatred: false,
           envy: false,
           fear: false,
@@ -328,6 +319,13 @@
     },
     components: {
       construction: Construction
+    },
+    filters: {
+      capitalize: function (value) {
+        if (!value) return ''
+        value = value.toString()
+        return value.charAt(0).toUpperCase() + value.slice(1)
+      }
     }
   };
 
