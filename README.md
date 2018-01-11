@@ -2,6 +2,10 @@
 
 > A Vue project with 3 novel approaches to navigating Spinoza's Ethics and making it relevant to everyday life
 
+Want to contribute? Please see the "Milestones" section and check the dependencies of various issues. If you want to make a change that is not listed, let's talk! Even we don't end up merging a pull request, you're encouraged to clone and share this project.
+
+For the graph in particular, we need some help building the data structure; it should be suited to D3 so that visualization is straightforward (i.e. we do not want to make any assumptions about the graph in D3 itself). Ideally it will be something that we can also use to accomadate 
+
 ## Build Setup
 
 ``` bash

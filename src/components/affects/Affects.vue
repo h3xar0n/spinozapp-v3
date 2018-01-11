@@ -264,7 +264,7 @@
       </div>
     </div>
     <construction></construction>
-    <!-- <div class="container">
+    <div class="container">
       affect checkbox and resolutions
       <div class="row">
         <div class="col-md-4">
@@ -290,7 +290,7 @@
           <span>Checked names: {{ selectedAffects }}</span>
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
