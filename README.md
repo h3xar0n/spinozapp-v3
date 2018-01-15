@@ -1,6 +1,4 @@
-# spinozapp
-
-> A Vue project with 3 novel approaches to navigating Spinoza's Ethics and making it relevant to everyday life
+# Spinozapp
 
 Want to contribute? Please see the "Milestones" section and check the dependencies of various issues. If you want to make a change that is not listed, let's talk! Even we don't end up merging a pull request, you're encouraged to clone and share this project.
 
