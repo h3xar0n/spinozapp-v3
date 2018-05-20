@@ -37,7 +37,7 @@
       </div>
       <div class="detail-card">
         <!-- String interpolation example -->
-        <!-- <transition name="fade">
+        <transition name="fade">
           <div>
             <h1>{{ affect | capitalize }}</h1>
             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
@@ -46,9 +46,9 @@
               {{ affect }}, {{ affect }}, {{ affect }}
             </p>
           </div>
-        </transition> -->
+        </transition>
 
-        <transition name="fade">
+        <!-- <transition name="fade">
           <div v-if="affect === 'affect'">
             <h1>Affect</h1>
             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5bX-H7dYoP0" frameborder="0" gesture="media" allow="encrypted-media"
@@ -271,11 +271,14 @@
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
             </p>
+            <button class="btn" @click="selectedAffects.affect = !selectedAffects.affect">
+              Courtesy
+            </button>
           </div>
-        </transition>
+        </transition> -->
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-md-4">
           <ul>
@@ -291,7 +294,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <construction></construction>
   </div>
 </template>
@@ -465,6 +468,7 @@
   @media (max-width: 821px) {
     .detail-card {
       width: 470px;
+      min-height: 340px;
     }
     .affect-selection {
       min-height: 400px;
