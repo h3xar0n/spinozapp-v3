@@ -6,9 +6,7 @@
         <div class="team-content">
           <h5>Adelina</h5>
           <p>A makeup artist and hairstylist with a penchant for UI design, color theory, and painting, Adelina
-            guides the visual design choices on Spinozapp. Her philosophical interests include the distinct conceptions of virtue
-            in Spinoza and Machiavelli, as well as how the Ethics applies to aesthetics.
-          </p>
+            guides the visual design choices on Spinozapp.</p>
         </div>
       </div>
       <br>
@@ -18,9 +16,9 @@
         <img src="../../assets/aron.jpg" alt="" class="team-image">
         <div class="team-content">
           <h5>Aron</h5>
-          <p>A software engineer who sees inorganic life within lines of code, Aron leads development, 
+          <p>A software engineer who still reads actual books, Aron leads development, 
             system design, and content for Spinozapp. His interests include the application of
-            Spinoza's ontology to computer science, and how technology can help people foster collaboration and reasoning skills.
+            Spinoza's ideas to computer science.
           </p>
         </div>
       </div>
