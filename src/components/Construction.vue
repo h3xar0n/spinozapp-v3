@@ -240,20 +240,20 @@
   border-radius: 50%;
 }
 .electrons span:nth-child(2) {
-  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .electrons span:nth-child(3) {
-  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .electrons span:nth-child(4) {
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-@-webkit-keyframes spin {
+@keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
