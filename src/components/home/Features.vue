@@ -1,5 +1,5 @@
 <template>
-  <div class="features-info dark-block">
+  <div class="features-info">
     <div class="info-column">
       <h1>⚡</h1>
       <h3>Affects</h3>
@@ -58,6 +58,7 @@
     transform: translate(-50%, 0);
   }
   .features-info {
+    background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
     max-width: 100vw;
     padding: 22px 10% 80px;
     display: flex;

@@ -1,14 +1,3 @@
-<template>
-  <div>
-    <jumbotron />
-    <features />
-    <team />
-    <external />
-    <contribution />
-    <!-- contact -->
-  </div>
-</template>
-
 <script>
   import Jumbotron from './Jumbotron.vue'
   import Features from './Features.vue'
@@ -25,5 +14,15 @@
       external: External
     }
   }
-
 </script>
+
+<template>
+  <div>
+    <jumbotron />
+    <features />
+    <team />
+    <external />
+    <contribution />
+    <!-- contact -->
+  </div>
+</template>

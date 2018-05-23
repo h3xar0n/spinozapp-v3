@@ -29,7 +29,7 @@
     z-index: 3;
     padding: 0;
     margin: 0;
-    background-color: white;
+    background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
     box-shadow: 2px 2px #f7f7f7;
   }
   .spinoza-img {

@@ -125,7 +125,7 @@
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
   background: -webkit-radial-gradient(center, ellipse cover, rgba(49, 61, 62, 0.3) 0%, rgba(49, 61, 62, 0.3) 10%, transparent 10%, transparent 100%);
 }
 .circle-inner:before {
@@ -144,7 +144,7 @@
   border-radius: 50%;
   top: 0;
   left: -50%;
-  -webkit-animation: spin 3s linear infinite reverse;
+  animation: spin 3s linear infinite reverse;
   background: -webkit-radial-gradient(center, ellipse cover, rgba(49, 61, 62, 0.3) 0%, rgba(49, 61, 62, 0.3) 7%, transparent 7%, transparent 100%);
 }
 .circle-travel:before,
