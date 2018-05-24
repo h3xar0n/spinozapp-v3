@@ -1,3 +1,13 @@
+<script>
+  export default {
+    data() {
+      return {
+        hover: false
+      }
+    }
+  }
+</script>
+
 <template>
   <div class="features-info">
     <div class="info-column">
@@ -23,17 +33,6 @@
     </div>
   </div>
 </template>
-
-<script>
-  export default {
-    data() {
-      return {
-        hover: false
-      }
-    }
-  }
-
-</script>
 
 <style scoped>
   .fade-enter-active,

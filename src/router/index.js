@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home/Home'
-import Affects from '@/components/affects/Affects'
+import Affect from '@/components/affects/Affect'
+import AffectIndex from '@/components/affects/AffectIndex'
+import Sorrow from '@/components/affects/Sorrow'
 import Reader from '@/components/reader/Reader'
 import BookMenu from '@/components/reader/Navigation'
 import Book1 from '@/components/reader/Book1'
@@ -14,7 +16,6 @@ import Book3Element3 from '@/components/reader/book3/Element3'
 import Book3Definition1 from '@/components/reader/book3/definitions/3definition1.vue'
 import Book4 from '@/components/reader/Book4'
 import Book5 from '@/components/reader/Book5'
-import Element from '@/components/reader/Element'
 import Graph from '@/components/graph/Graph'
 
 Vue.use(Router)
@@ -30,7 +31,17 @@ export default new Router({
     {
       path: '/affects',
       name: 'Affects',
-      component: Affects
+      component: AffectIndex,
+      children: [
+        {
+          path: '',
+          component: Affect
+        },
+        {
+          path: 'sorrow',
+          component: Sorrow
+        }
+      ]
     },
     {
       path: '/reader',
