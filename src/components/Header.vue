@@ -9,12 +9,6 @@
       <router-link class="button" to="/reader">Reader</router-link>
       <router-link class="button" to="/graph">Graph</router-link>
     </div>
-    <b-collapse is-nav id="nav_collapse">
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-button to="/graph">Graph</b-button>
-      </b-navbar-nav>
-    </b-collapse>
   </nav>
 
 </template>

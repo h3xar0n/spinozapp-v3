@@ -1,12 +1,10 @@
 <script>
   import Header from './components/Header.vue'
-  // import Footer from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
       appHeader: Header,
-      // appFooter: Footer
     }
   }
 </script>
@@ -17,7 +15,6 @@
     <transition name="fade" mode="out-in">
       <router-view class="view" />
     </transition>   
-    <!-- <app-footer/> -->
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="contribution-wrapper">
-    <b-container class="contribution-info">
-      <b-row>
-        <b-col sm="12" md="6">
+  <section class="contribution-wrapper">
+    <div class="container contribution-info">
+      <div class="row">
+        <article class="col-sm-12 col-md-6">
           <img src="../../assets/gitlab-logo.png" alt="">
           <h3 class="subtitle">Development</h3>
           <p>Whether it's refactoring our components or adding new features, there is always more work to be done behind the
@@ -31,8 +31,8 @@
               </a>
             </div>
           </div>
-        </b-col>
-        <b-col sm="12" md="6">
+        </article>
+        <article class="col-sm-12 col-md-6">
           <img src="../../assets/spinoza-money.png" alt="">
           <h3 class="subtitle">Donations</h3>
           <p>
@@ -42,21 +42,28 @@
             <a href="https://www.chp-sf.org/about/" target="_blank">Community Housing Partnership</a>.
           </p>
           <div class="goals">
-            <span>PaaS for API</span>
-            <b-progress :value="20" class="w-100" />
+            <span>Firebase hosting</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20"></div>
+            </div>
             <span>Custom domain</span>
-            <b-progress :value="20" class="w-75" />
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="40"></div>
+            </div>
             <span>HTTPS</span>
-            <b-progress :value="13" class="w-50" />
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
             <span>Email</span>
-            <b-progress :value="3" class="w-25" />
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
           <br>
-
-        </b-col>
-      </b-row>
-    </b-container>
-  </div>
+        </article>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style>
