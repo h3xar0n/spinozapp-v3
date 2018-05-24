@@ -4,6 +4,7 @@
   import Team from './Team.vue'
   import Contribution from './Contribution.vue'
   import External from './External.vue'
+  import Footer from '../Footer.vue'
 
   export default {
     components: {
@@ -11,7 +12,8 @@
       features: Features,
       team: Team,
       contribution: Contribution,
-      external: External
+      external: External,
+      appFooter: Footer
     }
   }
 </script>
@@ -23,6 +25,6 @@
     <team />
     <external />
     <contribution />
-    <!-- contact -->
+    <app-footer />
   </div>
 </template>
