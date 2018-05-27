@@ -1,7 +1,5 @@
 import Home from '@/components/home/Home'
-import Affect from '@/components/affects/Affect'
 import AffectIndex from '@/components/affects/AffectIndex'
-import Sorrow from '@/components/affects/Sorrow'
 import Reader from '@/components/reader/Reader'
 import BookMenu from '@/components/reader/Navigation'
 import Book1 from '@/components/reader/Book1'
@@ -24,16 +22,7 @@ export const routes = [{
 {
   path: '/affects',
   name: 'Affects',
-  component: AffectIndex,
-  children: [{
-    path: '',
-    component: Affect
-  },
-  {
-    path: 'sorrow',
-    component: Sorrow
-  }
-  ]
+  component: AffectIndex
 },
 {
   path: '/reader',

@@ -10,7 +10,6 @@
       <router-link class="button" to="/graph">Graph</router-link>
     </div>
   </nav>
-
 </template>
 
 <style scoped>

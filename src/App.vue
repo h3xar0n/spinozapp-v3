@@ -4,7 +4,7 @@
   export default {
     name: 'app',
     components: {
-      appHeader: Header,
+      appHeader: Header
     }
   }
 </script>
@@ -22,6 +22,7 @@
   #app {
     text-align: center;
     color: #2c3e50;
+    background-color: #0e0f0f;
     padding-top: 60px;
     min-height: 100vh;
     display: flex;
@@ -30,7 +31,7 @@
   }
 
   .fade-enter-active, .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity .2s;
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;

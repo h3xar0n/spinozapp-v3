@@ -3,7 +3,7 @@
     <div class="container contribution-info">
       <div class="row">
         <article class="col-sm-12 col-md-6">
-          <img src="../../assets/gitlab-logo.png" alt="">
+          <img src="../../assets/content.png" alt="">
           <h3 class="subtitle">Development</h3>
           <p>Whether it's refactoring our components or adding new features, there is always more work to be done behind the
             scenes. Check out our
@@ -19,17 +19,18 @@
               </a>
             </div>
             <div>
-              <a href="https://d3js.org/" target="_blank">
-                <i class="devicon-d3js-plain colored"></i>
-                <p>D3</p>
+              <a href="https://about.gitlab.com/" target="_blank">
+                <i class="fab fa-gitlab"></i>
+                <p>GitLab</p>
               </a>
             </div>
             <div>
-              <a href="http://sass-lang.com/" target="_blank">
-                <i class="devicon-sass-original colored"></i>
-                <p>Sass</p>
+              <a href="https://algolia.com/" target="_blank">
+                <i class="fab fa-algolia"></i>
+                <p>Algolia</p>
               </a>
             </div>
+            
           </div>
         </article>
         <article class="col-sm-12 col-md-6">
@@ -94,6 +95,14 @@
     padding: 20px 0;
     border-radius: 10px;
     transition: 0.2s;
+  }
+
+  .fa-algolia {
+    color: #257BED;
+  }
+
+  .fa-gitlab {
+    color: #fca326;
   }
 
   .code-tools:hover {
