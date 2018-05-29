@@ -22,7 +22,7 @@
   #app {
     text-align: center;
     color: #2c3e50;
-    background-color: #0e0f0f;
+    background-color: white;
     padding-top: 60px;
     min-height: 100vh;
     display: flex;

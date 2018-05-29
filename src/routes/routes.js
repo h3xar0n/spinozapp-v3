@@ -1,17 +1,5 @@
 import Home from '@/components/home/Home'
-import AffectIndex from '@/components/affects/AffectIndex'
-import AffectPage from '@/components/affects/content/Affect'
-import Action from '@/components/affects/content/Action'
-// import Ambition from '@/components/affects/content/Ambition'
-// import Anger from '@/components/affects/content/Anger'
-// import Benevolence from '@/components/affects/content/Benevolence'
-// import Compassion from '@/components/affects/content/Compassion'
-// import Courage from '@/components/affects/content/Courage'
-import Desire from '@/components/affects/content/Desire'
-// import Gratitude from '@/components/affects/content/Gratitude'
-import Passion from '@/components/affects/content/Passion'
-import Joy from '@/components/affects/content/Joy'
-import Sorrow from '@/components/affects/content/Sorrow'
+import { affects } from './affects'
 import Reader from '@/components/reader/Reader'
 import BookMenu from '@/components/reader/Navigation'
 import Book1 from '@/components/reader/Book1'
@@ -30,36 +18,7 @@ export const routes = [{
   path: '/',
   name: 'Home',
   component: Home
-},
-{
-  path: '/affects',
-  name: 'Affects',
-  component: AffectIndex,
-  children: [{
-    path: '',
-    component: AffectPage
-  },
-  {
-    path: 'action',
-    component: Action
-  },
-  {
-    path: 'passion',
-    component: Passion
-  },
-  {
-    path: 'joy',
-    component: Joy
-  },
-  {
-    path: 'sorrow',
-    component: Sorrow
-  },
-  {
-    path: 'desire',
-    component: Desire
-  }]
-},
+}, affects,
 {
   path: '/reader',
   name: 'Reader',
