@@ -1,93 +1,22 @@
 <script>
-import Video from './Video.vue'
-import Variants from './Variants.vue'
-import Solutions from './Solutions.vue'
+import Navigation from './Navigation.vue'
 
 export default {
-  filters: {
-    downcase: function(value) {
-      if (!value) return "";
-      value = value.toString();
-      return value.charAt(0).toLowerCase() + value.slice(1);
-    }
-  },
   components: {
-    appVideo: Video,
-    appVariants: Variants,
-    appSolutions: Solutions
+    affectNavigation: Navigation
   }
 };
 </script>
 
 <template>
   <main class="affects-route">
-    <nav class="affect-selector">
-      <div class="icon-component" @click="$store.state.selection = 'Affect'">
-        <i class="fas fa-bolt"></i>
-        <p>Affect <span class="large-divide">|</span><br class="small-break"> <em>Affectus</em></p>          
-      </div>
-      <div class="icon-component" @click="$store.state.selection = 'Sorrow'">
-        <i class="fas fa-level-down-alt"></i>
-        <p>Sorrow <span class="large-divide">|</span><br class="small-break"> <em>Tristia</em></p>          
-      </div>
-      <div class="icon-component" @click="$store.state.selection = 'Joy'">
-        <i class="fas fa-level-up-alt"></i>
-        <p>Joy <span class="large-divide">|</span><br class="small-break"> <em>Laetetia</em></p>
-      </div>
-      <div class="icon-component" @click="$store.state.selection = 'Desire'">
-        <i class="fas fa-arrows-alt"></i>
-        <p>Desire <span class="large-divide">|</span><br class="small-break"> <em>Cupidatas</em></p>
-      </div>
-      <div class="icon-component" @click="$store.state.selection = 'Passion'">
-        <i class="fas fa-compress"></i>
-        <p>Passion <span class="large-divide">|</span><br class="small-break"> <em>Passio</em></p>
-      </div>
-      <div class="icon-component" @click="$store.state.selection = 'Action'"> 
-        <i class="fas fa-expand"></i>
-        <p>Action <span class="large-divide">|</span><br class="small-break"> <em>Actio</em></p>
-      </div>
-    </nav>
-    <article>
-      <h1>{{ $store.state.selection }} | <em>{{ $store.state.choices[$store.state.selection].latin }}</em></h1>
-      <app-video></app-video>
-      <blockquote>
-        "{{ $store.state.choices[$store.state.selection].definition }}"
-      </blockquote>
-      <app-solutions></app-solutions>
-      <br>
-      <h3>Variants:</h3>
-      <app-variants></app-variants>
-    </article>
+    <affect-navigation></affect-navigation>
+    <router-view></router-view>
     <aside></aside>
   </main>
 </template>
 
 <style>
-
-nav.affect-selector {
-  display: flex;
-  flex-direction: column;
-}
-
-nav .icon-component {
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-start;
-  padding: 10px;
-}
-
-nav .icon-component i {
-  font-size: 18px;
-  width: 18px;
-}
-
-nav .icon-component p {
-  margin: 0 18px;
-}
-
-nav .icon-component p em {
-  color: black;
-}
 
 .affect-video {
   border-radius: 16px;
@@ -139,9 +68,6 @@ i {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
-}
-.icon-component p {
-  text-align: center;
 }
 .affect-parent {
   display: flex;

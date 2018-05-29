@@ -1,5 +1,11 @@
 import Home from '@/components/home/Home'
 import AffectIndex from '@/components/affects/AffectIndex'
+import AffectPage from '@/components/affects/content/Affect'
+import Action from '@/components/affects/content/Action'
+import Passion from '@/components/affects/content/Passion'
+import Desire from '@/components/affects/content/Desire'
+import Joy from '@/components/affects/content/Joy'
+import Sorrow from '@/components/affects/content/Sorrow'
 import Reader from '@/components/reader/Reader'
 import BookMenu from '@/components/reader/Navigation'
 import Book1 from '@/components/reader/Book1'
@@ -22,7 +28,31 @@ export const routes = [{
 {
   path: '/affects',
   name: 'Affects',
-  component: AffectIndex
+  component: AffectIndex,
+  children: [{
+    path: '',
+    component: AffectPage
+  },
+  {
+    path: 'action',
+    component: Action
+  },
+  {
+    path: 'passion',
+    component: Passion
+  },
+  {
+    path: 'joy',
+    component: Joy
+  },
+  {
+    path: 'sorrow',
+    component: Sorrow
+  },
+  {
+    path: 'desire',
+    component: Desire
+  }]
 },
 {
   path: '/reader',
