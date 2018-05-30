@@ -4,7 +4,7 @@ import Action from '@/components/affects/content/Action'
 import Ambition from '@/components/affects/content/Ambition'
 import Anger from '@/components/affects/content/Anger'
 import Benevolence from '@/components/affects/content/Benevolence'
-import Compassion from '@/components/affects/content/Compassion'
+import Sympathy from '@/components/affects/content/Sympathy'
 import Courage from '@/components/affects/content/Courage'
 import Desire from '@/components/affects/content/Desire'
 import Gratitude from '@/components/affects/content/Gratitude'
@@ -14,7 +14,7 @@ import Humility from '@/components/affects/content/Humility'
 import Love from '@/components/affects/content/Love'
 import Nobility from '@/components/affects/content/Nobility'
 import Pride from '@/components/affects/content/Pride'
-import SelfAcquiescence from '@/components/affects/content/SelfAcquiescence'
+import SelfApproval from '@/components/affects/content/SelfApproval'
 import Shame from '@/components/affects/content/Shame'
 import Passion from '@/components/affects/content/Passion'
 import Joy from '@/components/affects/content/Joy'
@@ -45,8 +45,8 @@ export const affects = {
     component: Benevolence
   },
   {
-    path: 'compassion',
-    component: Compassion
+    path: 'sympathy',
+    component: Sympathy
   },
   {
     path: 'gratitude',
@@ -73,8 +73,8 @@ export const affects = {
     component: Nobility
   },
   {
-    path: 'selfacquiescence',
-    component: SelfAcquiescence
+    path: 'selfapproval',
+    component: SelfApproval
   },
   {
     path: 'shame',

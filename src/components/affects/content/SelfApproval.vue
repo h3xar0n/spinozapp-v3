@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1>Self-Acquiescence</h1>
+    <h1>Self-Approval</h1>
     <blockquote>
       Definition goes here
     </blockquote>

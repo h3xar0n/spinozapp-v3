@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/">
+  <router-link to="/affects/honor">
     <div class="icon-component">
       <i class="fas fa-thumbs-up"></i>
       <p>

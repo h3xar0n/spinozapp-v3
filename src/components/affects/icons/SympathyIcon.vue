@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/">
+  <router-link to="/affects/sympathy">
     <div class="icon-component">
       <i class="fas fa-people-carry"></i>
       <p>

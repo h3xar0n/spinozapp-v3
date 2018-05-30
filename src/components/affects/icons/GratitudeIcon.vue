@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/">
+  <router-link to="/affects/gratitude">
     <div class="icon-component">
       <i class="fas fa-sync"></i>
       <p>

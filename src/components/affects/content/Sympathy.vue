@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h1>Compassion</h1>
+    <h1>Sympathy</h1>
     <blockquote>
       Definition goes here
     </blockquote>

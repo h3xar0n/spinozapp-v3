@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/">
+  <router-link to="/affects/love">
     <div class="icon-component">
       <i class="fas fa-check-circle"></i>
       <p>

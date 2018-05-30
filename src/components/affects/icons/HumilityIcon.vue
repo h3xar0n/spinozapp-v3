@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/">
+  <router-link to="/affects/humility">
     <div class="icon-component">
       <i class="fas fa-search-minus"></i>
       <p>
