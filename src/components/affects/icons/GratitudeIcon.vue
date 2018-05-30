@@ -1,11 +1,11 @@
 <template>
   <router-link to="/affects/">
     <div class="icon-component">
-      <i class="fas fa-bolt"></i>
+      <i class="fas fa-sync"></i>
       <p>
-        Affect
+        Gratitude
         <br>
-        <em>Affectus</em>
+        <em>Gratitudo</em>
       </p>          
     </div>
   </router-link>

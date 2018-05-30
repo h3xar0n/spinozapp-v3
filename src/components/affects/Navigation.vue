@@ -4,7 +4,7 @@ import AffectIcon from './icons/AffectIcon.vue'
 import AmbitionIcon from './icons/AmbitionIcon.vue'
 import AngerIcon from './icons/AngerIcon.vue'
 import BenevolenceIcon from './icons/BenevolenceIcon.vue'
-import CompassionIcon from './icons/CompassionIcon.vue'
+import SympathyIcon from './icons/SympathyIcon.vue'
 import CourageIcon from './icons/CourageIcon.vue'
 import DesireIcon from './icons/DesireIcon.vue'
 import GratitudeIcon from './icons/GratitudeIcon.vue'
@@ -28,7 +28,7 @@ export default {
     angerIcon: AngerIcon,
     benevolenceIcon: BenevolenceIcon,
     courageIcon: CourageIcon,
-    compassionIcon: CompassionIcon,
+    sympathyIcon: SympathyIcon,
     gratitudeIcon: GratitudeIcon,
     hatredIcon: HatredIcon,
     honorIcon: HonorIcon,
@@ -52,11 +52,11 @@ export default {
     <action-icon></action-icon>
     <nobility-icon></nobility-icon>
     <courage-icon></courage-icon>
-    <self-aquiscence-icon></self-aquiscence-icon>
+    <self-acquiescence-icon></self-acquiescence-icon>
     <passion-icon></passion-icon>
     <joy-icon></joy-icon>
     <love-icon></love-icon>
-    <compassion-icon></compassion-icon>
+    <sympathy-icon></sympathy-icon>
     <pride-icon></pride-icon>
     <honor-icon></honor-icon>
     <sorrow-icon></sorrow-icon>

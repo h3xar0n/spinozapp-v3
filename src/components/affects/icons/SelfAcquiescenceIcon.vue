@@ -1,11 +1,11 @@
 <template>
   <router-link to="/affects/">
     <div class="icon-component">
-      <i class="fas fa-bolt"></i>
+      <i class="fas fa-user-check"></i>
       <p>
-        Affect
+        Self-Acquiescence
         <br>
-        <em>Affectus</em>
+        <em>Acquiescentia in se ipso</em>
       </p>          
     </div>
   </router-link>

@@ -1,11 +1,11 @@
 <template>
   <router-link to="/affects/">
     <div class="icon-component">
-      <i class="fas fa-bolt"></i>
+      <i class="fas fa-search-minus"></i>
       <p>
-        Affect
+        Humility
         <br>
-        <em>Affectus</em>
+        <em>Humilitas</em>
       </p>          
     </div>
   </router-link>
