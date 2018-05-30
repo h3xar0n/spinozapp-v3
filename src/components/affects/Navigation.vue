@@ -1,19 +1,47 @@
 <script>
-import AffectIcon from './icons/AffectIcon.vue'
-import SorrowIcon from './icons/SorrowIcon.vue'
-import JoyIcon from './icons/JoyIcon.vue'
-import DesireIcon from './icons/DesireIcon.vue'
-import PassionIcon from './icons/PassionIcon.vue'
 import ActionIcon from './icons/ActionIcon.vue'
+import AffectIcon from './icons/AffectIcon.vue'
+import AmbitionIcon from './icons/AmbitionIcon.vue'
+import AngerIcon from './icons/AngerIcon.vue'
+import BenevolenceIcon from './icons/BenevolenceIcon.vue'
+import CompassionIcon from './icons/CompassionIcon.vue'
+import CourageIcon from './icons/CourageIcon.vue'
+import DesireIcon from './icons/DesireIcon.vue'
+import GratitudeIcon from './icons/GratitudeIcon.vue'
+import HatredIcon from './icons/HatredIcon.vue'
+import HonorIcon from './icons/HonorIcon.vue'
+import HumilityIcon from './icons/HumilityIcon.vue'
+import JoyIcon from './icons/JoyIcon.vue'
+import LoveIcon from './icons/LoveIcon.vue'
+import NobilityIcon from './icons/NobilityIcon.vue'
+import PassionIcon from './icons/PassionIcon.vue'
+import PrideIcon from './icons/PrideIcon.vue'
+import SelfAcquiescenceIcon from './icons/SelfAcquiescenceIcon.vue'
+import ShameIcon from './icons/ShameIcon.vue'
+import SorrowIcon from './icons/SorrowIcon.vue'
 
 export default {
   components: {
+    actionIcon: ActionIcon,
     affectIcon: AffectIcon,
+    ambitionIcon: AmbitionIcon,
+    angerIcon: AngerIcon,
+    benevolenceIcon: BenevolenceIcon,
+    courageIcon: CourageIcon,
+    compassionIcon: CompassionIcon,
+    gratitudeIcon: GratitudeIcon,
+    hatredIcon: HatredIcon,
+    honorIcon: HonorIcon,
+    humilityIcon: HumilityIcon,
+    loveIcon: LoveIcon,
+    nobilityIcon: NobilityIcon,
+    prideIcon: PrideIcon,
+    selfAcquiescenceIcon: SelfAcquiescenceIcon,
+    shameIcon: ShameIcon,
     sorrowIcon: SorrowIcon,
     joyIcon: JoyIcon,
     desireIcon: DesireIcon,
-    passionIcon: PassionIcon,
-    actionIcon: ActionIcon
+    passionIcon: PassionIcon
   }
 };
 </script>
@@ -22,10 +50,24 @@ export default {
   <nav class="affect-navigation">
     <affect-icon></affect-icon>
     <action-icon></action-icon>
+    <nobility-icon></nobility-icon>
+    <courage-icon></courage-icon>
+    <self-aquiscence-icon></self-aquiscence-icon>
     <passion-icon></passion-icon>
     <joy-icon></joy-icon>
+    <love-icon></love-icon>
+    <compassion-icon></compassion-icon>
+    <pride-icon></pride-icon>
+    <honor-icon></honor-icon>
     <sorrow-icon></sorrow-icon>
+    <hatred-icon></hatred-icon>
+    <humility-icon></humility-icon>
+    <shame-icon></shame-icon>
     <desire-icon></desire-icon>
+    <benevolence-icon></benevolence-icon>
+    <gratitude-icon></gratitude-icon>
+    <anger-icon></anger-icon>
+    <ambition-icon></ambition-icon>
   </nav>
 </template>
 
