@@ -11,7 +11,9 @@ export default {
 <template>
   <main class="affects-route">
     <affect-navigation></affect-navigation>
-    <router-view></router-view>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
     <aside></aside>
   </main>
 </template>
@@ -64,11 +66,13 @@ i {
   transition: 0.3s;
   /* height: 120px; */
 }
-.icon-component:hover {
+
+article .icon-component:hover {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
 }
+
 .affect-parent {
   display: flex;
   border: 1px solid black;
@@ -101,7 +105,7 @@ article {
 }
 
 nav {
-  flex: 1 1 20%;
+  min-width: 250px;
   background: #95a5a6;
 }
 
@@ -138,15 +142,12 @@ aside {
     flex-direction: column;
     flex-grow: 1;
   }
-  nav .icon-component {
-    width: 10%
-  }
-
-  .affect-selector .icon-component p {
-    display: none;
-  }
-  nav.affect-selector {
+  nav.affect-navigation {
     flex-direction: row;
+    overflow-y: hidden;
+  }
+  nav .icon-component p {
+    display: none;
   }
   nav,
   aside {

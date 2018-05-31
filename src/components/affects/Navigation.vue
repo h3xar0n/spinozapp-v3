@@ -72,29 +72,57 @@ export default {
 </template>
 
 <style>
+nav {
+  min-width: 200px;
+}
+
 nav.affect-navigation {
   display: flex;
   flex-direction: column;
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  background-color: #0e0f0f;
 }
 
 nav .icon-component {
   flex-direction: row;
   width: 100%;
   justify-content: space-start;
+  margin: 1px;
+  border-radius: 3px;
+  color: white;
   padding: 10px;
 }
 
+nav .icon-component:hover {
+  background-color: darkslategray;
+  transition: 0.1s;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
 nav .icon-component i {
-  font-size: 18px;
+  font-size: 12px;
   width: 18px;
 }
 
 nav .icon-component p {
   margin: 0 18px;
   text-align: left;
+  font-size: 12px;
 }
 
-nav .icon-component p em {
-  color: black;
+nav .icon-component p em, 
+nav .icon-component p br {
+  display: none;
 }
+
+@media (max-width: 640px) {
+  nav.affect-navigation {
+    flex-direction: row;
+  }
+}
+
 </style>
