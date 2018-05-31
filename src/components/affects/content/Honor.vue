@@ -1,6 +1,16 @@
+<script>
+  import HonorIcon from '../icons/HonorIcon'
+
+  export default {
+    components: {
+      honorIcon: HonorIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Honor</h1>
+    <honor-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

@@ -1,6 +1,16 @@
+<script>
+  import ShameIcon from '../icons/ShameIcon'
+
+  export default {
+    components: {
+      shameIcon: ShameIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Shame</h1>
+    <shame-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

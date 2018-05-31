@@ -1,6 +1,25 @@
+<script>
+  import NobilityIcon from '../icons/NobilityIcon'
+  import ActionIcon from '../icons/ActionIcon'
+  import AffectIcon from '../icons/AffectIcon'
+  import DesireIcon from '../icons/DesireIcon'
+  import JoyIcon from '../icons/JoyIcon'
+
+  export default {
+    components: {
+      nobilityIcon: NobilityIcon,
+      actionIcon: ActionIcon,
+      affectIcon: AffectIcon,
+      desireIcon: DesireIcon,
+      joyIcon: JoyIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Nobility</h1>
+    <nobility-icon></nobility-icon>
+    <p>An <action-icon></action-icon> pertaining to reasonable <desire-icon></desire-icon> and <joy-icon></joy-icon> of others.</p>
     <blockquote>
       Definition goes here
     </blockquote>

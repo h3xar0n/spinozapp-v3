@@ -1,6 +1,16 @@
+<script>
+  import SympathyIcon from '../icons/SympathyIcon'
+
+  export default {
+    components: {
+      sympathyIcon: SympathyIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Sympathy</h1>
+    <sympathy-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

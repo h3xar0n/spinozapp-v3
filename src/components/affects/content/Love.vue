@@ -1,6 +1,16 @@
+<script>
+  import LoveIcon from '../icons/LoveIcon'
+
+  export default {
+    components: {
+      loveIcon: LoveIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Love</h1>
+    <love-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

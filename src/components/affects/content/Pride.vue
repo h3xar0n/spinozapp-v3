@@ -1,6 +1,16 @@
+<script>
+  import PrideIcon from '../icons/PrideIcon'
+
+  export default {
+    components: {
+      prideIcon: PrideIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Pride</h1>
+    <pride-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

@@ -1,6 +1,16 @@
+<script>
+  import JoyIcon from '../icons/JoyIcon'
+
+  export default {
+    components: {
+      joyIcon: JoyIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Joy</h1>
+    <joy-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

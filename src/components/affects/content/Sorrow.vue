@@ -1,6 +1,16 @@
+<script>
+  import SorrowIcon from '../icons/SorrowIcon'
+
+  export default {
+    components: {
+      sorrowIcon: SorrowIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Sorrow</h1>
+    <sorrow-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

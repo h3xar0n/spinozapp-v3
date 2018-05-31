@@ -1,6 +1,19 @@
+<script>
+  import AmbitionIcon from '../icons/AmbitionIcon'
+  import DesireIcon from '../icons/DesireIcon'
+
+  export default {
+    components: {
+      ambitionIcon: AmbitionIcon,
+      desireIcon: DesireIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Ambition</h1>
+    <ambition-icon></ambition-icon>
+    <p>An excessive <desire-icon></desire-icon> for everyone else to live in agreement with our desires, amplifying all the other passions.</p>
     <blockquote>
       Definition goes here
     </blockquote>

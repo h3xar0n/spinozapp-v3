@@ -1,6 +1,16 @@
+<script>
+  import HumilityIcon from '../icons/HumilityIcon'
+
+  export default {
+    components: {
+      humilityIcon: HumilityIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Humility</h1>
+    <humility-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

@@ -1,6 +1,16 @@
+<script>
+  import PassionIcon from '../icons/PassionIcon'
+
+  export default {
+    components: {
+      passionIcon: PassionIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Passion</h1>
+    <passion-icon/>
     <blockquote>
       Definition goes here
     </blockquote>

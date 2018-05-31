@@ -1,6 +1,16 @@
+<script>
+  import BenevolenceIcon from '../icons/BenevolenceIcon'
+
+  export default {
+    components: {
+      benevolenceIcon: BenevolenceIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Benevolence</h1>
+    <benevolence-icon></benevolence-icon>
     <blockquote>
       Definition goes here
     </blockquote>

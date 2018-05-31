@@ -1,9 +1,21 @@
+<script>
+  import ActionIcon from '../icons/ActionIcon'
+  import SelfApprovalIcon from '../icons/SelfApprovalIcon'
+  import JoyIcon from '../icons/JoyIcon'
+
+  export default {
+    components: {
+      actionIcon: ActionIcon,
+      joyIcon: JoyIcon,
+      selfApprovalIcon: SelfApprovalIcon
+    }
+  }
+</script>
+
 <template>
   <article>
-    <h1>Self-Approval</h1>
-    <blockquote>
-      Definition goes here
-    </blockquote>
+    <self-approval-icon/>
+    <p><joy-icon/> arising from the thought of our own power of <action-icon/></p>
     <div>Video goes here</div>
     <div>Solutions go here</div>
     <br>
