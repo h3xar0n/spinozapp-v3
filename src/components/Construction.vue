@@ -39,6 +39,9 @@
 </template>
 
 <style scoped>
+p {
+  text-align: center;
+}
 *,
 *:before,
 *:after {
