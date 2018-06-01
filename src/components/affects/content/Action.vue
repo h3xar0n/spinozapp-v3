@@ -21,3 +21,13 @@
     <div>Variants go here</div>
   </article>
 </template>
+
+<style>
+  .icon-component {
+    color: black;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+</style>

@@ -43,7 +43,7 @@ blockquote {
 }
 
 p {
-  text-align: left;
+  text-align: center;
 }
 
 .related {
@@ -54,6 +54,15 @@ p {
 
 i {
   font-size: 60px;
+}
+
+.icon-component {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .icon-component {
@@ -68,9 +77,32 @@ i {
 }
 
 article .icon-component:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+  transform: scale(1.05);
+  transition: 0.1s;
   cursor: pointer;
+}
+
+article p .icon-component {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 2px;
+  margin: 5px;
+  border: 1px solid #d4d0d0;
+  background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
+  border-radius: 6px;
+   text-align: left;
+}
+
+article p .icon-component br {
+  display: none;
+}
+
+article p .icon-component i {
+  font-size: 20px;
+}
+
+article p .icon-component * {
+  margin: 0 5px;
 }
 
 .affect-parent {
@@ -79,12 +111,15 @@ article .icon-component:hover {
   border-radius: 6px;
   padding-top: 20px;
 }
+
 .affect-parent p {
   padding: 10px;
 }
+
 .small-break {
   display: none;
 }
+
 em {
   color: #f3ab00;
 }
@@ -101,7 +136,7 @@ main.affects-route > * {
 
 article {
   flex: 4 0 60%;
-  background: #ecf0f1;
+  background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
 }
 
 nav {
@@ -111,7 +146,7 @@ nav {
 
 aside {
   flex: 1 1 20%;
-  background: #3498db;
+  background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
 }
 
 @media all and (max-width: 800px) {
