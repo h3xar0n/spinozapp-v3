@@ -21,7 +21,6 @@ p {
 
 a {
   color: #f6be0b;
-  text-decoration: none;
 }
 
 .approach {
@@ -83,4 +82,8 @@ a {
     font-size: 8px;
     width: 70px;
   }
+}
+
+a:hover {
+  text-decoration: none !important;
 }
