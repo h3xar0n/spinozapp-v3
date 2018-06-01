@@ -159,6 +159,12 @@ aside {
   background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
 }
 
+@media all and (min-width: 1200px) {
+  nav {
+    flex: 1 1 20%;
+  }
+}
+
 @media all and (max-width: 800px) {
   .affect-video {
     border-radius: 16px;
@@ -189,7 +195,7 @@ aside {
   }
   nav.affect-navigation {
     flex-direction: row;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
   }
   nav .icon-component p {
     display: none;
