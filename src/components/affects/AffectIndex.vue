@@ -76,6 +76,12 @@ a:hover {
   /* height: 120px; */
 }
 
+article>a>.icon-component p {
+  padding-top: 5px;
+  font-family: 'Dosis', sans-serif !important;
+  font-size: 22px;
+}
+
 article .icon-component:hover {
   transform: scale(1.05);
   transition: 0.1s;
