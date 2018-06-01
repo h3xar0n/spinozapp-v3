@@ -82,6 +82,10 @@ article .icon-component:hover {
   cursor: pointer;
 }
 
+article>p {
+  text-align: left;
+}
+
 article p .icon-component {
   display: inline-flex;
   flex-direction: row;
@@ -90,7 +94,7 @@ article p .icon-component {
   border: 1px solid #d4d0d0;
   background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
   border-radius: 6px;
-   text-align: left;
+   
 }
 
 article p .icon-component br {
