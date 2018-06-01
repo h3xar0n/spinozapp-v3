@@ -38,9 +38,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style scoped>
 *,
 *:before,
@@ -256,5 +253,4 @@
     transform: rotate(360deg);
   }
 }
-
 </style>

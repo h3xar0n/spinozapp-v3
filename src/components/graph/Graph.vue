@@ -1,9 +1,3 @@
-<template>
-  <div class="approach">
-    <under-construction />
-  </div>
-</template>
-
 <script>
   import Construction from '../Construction.vue'
 
@@ -13,3 +7,9 @@
     }
   }
 </script>
+
+<template>
+  <div class="approach">
+    <under-construction />
+  </div>
+</template>
