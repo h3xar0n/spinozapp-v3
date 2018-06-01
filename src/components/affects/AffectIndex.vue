@@ -89,11 +89,11 @@ em {
   color: #f3ab00;
 }
 
-main {
+main.affects-route {
   display: flex;
 }
 
-main > * {
+main.affects-route > * {
   margin: 5px;
   padding: 5px;
   border-radius: 7px;
