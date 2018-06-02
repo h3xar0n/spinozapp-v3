@@ -1,11 +1,19 @@
 <script>
 import Navigation from './Navigation.vue'
 import Favorites from './Favorites.vue'
+// Move to involvement component
+import CourageIcon from './icons/CourageIcon'
+import NobilityIcon from './icons/NobilityIcon'
+import SelfApprovalIcon from './icons/SelfApprovalIcon'
 
 export default {
   components: {
     affectNavigation: Navigation,
-    affectFavorites: Favorites
+    affectFavorites: Favorites,
+    // Move to involvement component
+    courageIcon: CourageIcon,
+    nobilityIcon: NobilityIcon,
+    selfApprovalIcon: SelfApprovalIcon
   }
 };
 </script>
@@ -13,9 +21,26 @@ export default {
 <template>
   <main class="affects-route">
     <affect-navigation></affect-navigation>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
+    <article>
+      <h1></h1>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+      <article v-show="$router.history.current.path === '/affects/'">
+        <h3>Involvements:</h3>
+        <div class="involvements">
+          <courage-icon></courage-icon>
+        </div>
+      </article>
+      <article v-show="$router.history.current.path === '/affects/action'">
+        <h3>Involvements:</h3>
+        <div class="involvements">
+          <courage-icon></courage-icon>
+          <nobility-icon></nobility-icon>
+          <self-approval-icon></self-approval-icon>
+        </div>
+      </article>  
+    </article> 
     <affect-favorites></affect-favorites>
   </main>
 </template>
@@ -75,7 +100,6 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   transition: 0.3s;
-  /* height: 120px; */
 }
 
 article>a>.icon-component p {
