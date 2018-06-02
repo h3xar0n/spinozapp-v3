@@ -11,8 +11,15 @@
 </script>
 
 <template>
-  <section>
+  <section class="related">
     <affect-icon></affect-icon>
     <affect-sol></affect-sol>
   </section>
 </template>
+
+<style>
+  .related {
+    display: flex;
+    justify-content: start;
+  }
+</style>
