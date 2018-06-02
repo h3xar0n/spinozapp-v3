@@ -26,20 +26,21 @@ export default {
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-      <article v-show="$router.history.current.path === '/affects/'">
-        <h3>Involvements:</h3>
-        <div class="involvements">
-          <courage-icon></courage-icon>
+      <div v-if="$store.state.affects[$router.history.current.path]">
+        <h3>Solutions</h3>
+        <div :key="solutionId"
+              v-for="solutionId in $store.state.affects[$router.history.current.path].solutions">
+          <p>{{ $store.state.solutions[solutionId].text }}</p> 
+          <button v-show="$store.state.solutions[solutionId].favorite === false"
+                  @click="$store.state.solutions[solutionId].favorite = true">
+            Favorite
+          </button>
+          <button v-show="$store.state.solutions[solutionId].favorite === true"
+                  @click="$store.state.solutions[solutionId].favorite = false">
+            Unfavorite
+          </button>
         </div>
-      </article>
-      <article v-show="$router.history.current.path === '/affects/action'">
-        <h3>Involvements:</h3>
-        <div class="involvements">
-          <courage-icon></courage-icon>
-          <nobility-icon></nobility-icon>
-          <self-approval-icon></self-approval-icon>
-        </div>
-      </article>  
+      </div>
     </article> 
     <affect-favorites></affect-favorites>
   </main>

@@ -18,9 +18,9 @@ export const solutions = {
   5: {
     favorite: true,
     text: 'awesome.'
-  },
+  }
   // #: {
   //   favorite: false,
   //   text: ''
-  // },
+  // }
 }
