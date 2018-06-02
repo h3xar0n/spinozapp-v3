@@ -1,9 +1,11 @@
 <script>
 import Navigation from './Navigation.vue'
+import Favorites from './Favorites.vue'
 
 export default {
   components: {
-    affectNavigation: Navigation
+    affectNavigation: Navigation,
+    affectFavorites: Favorites
   }
 };
 </script>
@@ -14,7 +16,7 @@ export default {
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
-    <aside></aside>
+    <affect-favorites></affect-favorites>
   </main>
 </template>
 
