@@ -79,9 +79,10 @@ nav {
 nav.affect-navigation {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 70px);
-  overflow-y: scroll;
   background-color: #0e0f0f;
+  /* overflow-y: scroll; */
+  /* height: calc(100vh - 70px); */
+  /* position: fixed; */
 }
 
 nav .icon-component {

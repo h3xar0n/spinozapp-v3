@@ -21,7 +21,7 @@ export default {
 <template>
   <main class="affects-route">
     <affect-navigation></affect-navigation>
-    <article>
+    <article class="feature">
       <h1></h1>
       <transition name="fade" mode="out-in">
         <router-view></router-view>
@@ -171,7 +171,7 @@ main.affects-route > * {
   border-radius: 7px;
 }
 
-article {
+article.feature {
   flex: 4 0 60%;
   background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
 }
