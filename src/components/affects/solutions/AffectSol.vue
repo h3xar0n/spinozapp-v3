@@ -1,14 +1,15 @@
 <template>
   <div>
     <div :key="solution"
-          v-for="solution in $store.state.affects.affect" 
-          v-show="solution.selection === 'normal'">
+          v-for="solution in $store.state.solutions">
       <p>{{ solution.text }}</p>
-      <button @click="solution.selection = 'favorite'">
+      <button v-show="solution.favorite === false"
+              @click="solution.favorite = true">
         Favorite
       </button>
-      <button @click="solution.selection = 'hidden'">
-        Hide
+      <button v-show="solution.favorite === true"
+              @click="solution.favorite = false">
+        Unfavorite
       </button>
     </div>
   </div>
