@@ -1,5 +1,5 @@
 export const affects = {
-  '/affects/': {
+  '/affects': {
     name: 'Affect',
     solutions: [1, 2, 3],
     dependencies: {},

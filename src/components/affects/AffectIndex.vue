@@ -1,6 +1,7 @@
 <script>
-import Navigation from './Navigation.vue'
-import Favorites from './Favorites.vue'
+import Navigation from './Navigation'
+import Favorites from './Favorites'
+
 // Move to involvement component
 import CourageIcon from './icons/CourageIcon'
 import NobilityIcon from './icons/NobilityIcon'
@@ -26,21 +27,6 @@ export default {
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-      <div v-if="$store.state.affects[$router.history.current.path]">
-        <h3>Solutions</h3>
-        <div :key="solutionId"
-              v-for="solutionId in $store.state.affects[$router.history.current.path].solutions">
-          <p>{{ $store.state.solutions[solutionId].text }}</p> 
-          <button v-show="$store.state.solutions[solutionId].favorite === false"
-                  @click="$store.state.solutions[solutionId].favorite = true">
-            Favorite
-          </button>
-          <button v-show="$store.state.solutions[solutionId].favorite === true"
-                  @click="$store.state.solutions[solutionId].favorite = false">
-            Unfavorite
-          </button>
-        </div>
-      </div>
     </article> 
     <affect-favorites></affect-favorites>
   </main>
@@ -107,6 +93,19 @@ article>a>.icon-component p {
   padding-top: 5px;
   font-family: 'Dosis', sans-serif !important;
   font-size: 22px;
+}
+
+article p .icon-component em {
+  display: none;
+}
+
+article p .icon-component {
+  min-width: 10px;
+  padding: 5px !important;
+}
+
+article>p>.icon-component>p {
+  text-align: center;
 }
 
 article .icon-component:hover {
