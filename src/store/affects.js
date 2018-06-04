@@ -3,14 +3,18 @@ export const affects = {
     name: 'Affect',
     solutions: [1, 2, 3],
     dependencies: {},
-    insofar: 'an affect, it be refined'
+    insofar: 'an Affect, it can be refined'
   },
   '/affects/action': {
     name: 'Action',
     solutions: [4, 5],
-    dependencies: {
-      '/affects/': true
-    },
-    insofar: 'an action, it can be strengthened'
+    dependencies: ['/affects'],
+    insofar: 'an Action, it can be strengthened'
   }
+  // 'route name as key': {
+  //   name: '',
+  //   solutions: [],
+  //   dependencies: ['/affects'],
+  //   insofar: ''
+  // }
 }
