@@ -1,60 +1,70 @@
 <template>
   <div v-show="$store.state.affects[$router.history.current.path]">
-    <h3>Solutions</h3>
+    <h3>Meditations</h3>
     <div :key="solutionId"
+         class="solution-text"
          :class="{favorite: $store.state.solutions[solutionId].favorite}"
-          v-for="solutionId in $store.state.affects[$router.history.current.path].solutions">
+         @click="$store.state.solutions[solutionId].favorite = !$store.state.solutions[solutionId].favorite"
+         v-for="solutionId in $store.state.affects[$router.history.current.path].solutions">
+      <i v-show="$store.state.solutions[solutionId].favorite === false"
+          class="far fa-check-circle"></i>
+      <i v-show="$store.state.solutions[solutionId].favorite === true"
+          class="fas fa-check-circle"></i>
       <p>{{ $store.state.solutions[solutionId].text }}</p> 
-      <button v-show="$store.state.solutions[solutionId].favorite === false"
-              @click="$store.state.solutions[solutionId].favorite = true">
-        <i class="fas fa-check-circle"></i>
-      </button>
-      <button v-show="$store.state.solutions[solutionId].favorite === true"
-              @click="$store.state.solutions[solutionId].favorite = false">
-        <i class="fas fa-times-circle"></i>
-      </button>
     </div>
     <div :key="dependency"
           v-for="dependency in $store.state.affects[$router.history.current.path].dependencies">
       <br>
-      <p>Insofar as {{ $store.state.affects[$router.history.current.path].name }} is a {{ $store.state.affects[dependency].insofar }} with the following: </p>
+      <p>Insofar as {{ $store.state.affects[$router.history.current.path].name }} is {{ $store.state.affects[dependency].insofar }} with the following: </p>
       <div :key="subSolutionId"
+           class="solution-text"
            :class="{favorite: $store.state.solutions[subSolutionId].favorite}"
+           @click="$store.state.solutions[subSolutionId].favorite = !$store.state.solutions[subSolutionId].favorite"
            v-for="subSolutionId in $store.state.affects[dependency].solutions">
+        <i v-show="$store.state.solutions[subSolutionId].favorite === false"
+           class="far fa-check-circle"></i>
+        <i v-show="$store.state.solutions[subSolutionId].favorite === true"          
+           class="fas fa-check-circle"></i>
         <p>{{ $store.state.solutions[subSolutionId].text }}</p> 
-        <button v-show="$store.state.solutions[subSolutionId].favorite === false"
-                @click="$store.state.solutions[subSolutionId].favorite = true">
-          <i class="fas fa-check-circle"></i>
-        </button>
-        <button v-show="$store.state.solutions[subSolutionId].favorite === true"
-                @click="$store.state.solutions[subSolutionId].favorite = false">
-          <i class="fas fa-times-circle"></i>
-        </button>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-button {
-  display: inline-flex;
-  flex-direction: row;
-  padding: 10px;
-  cursor: pointer; 
-  margin: 5px;
-  border: 1px solid #d4d0d0;
-  background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
-  border-radius: 6px;
+
+i {
+  font-size: 32px;
+  color: lightgray;
+}
+.fas.fa-check-circle {
+  color: #54b854;
+}
+.solution-text:hover .far.fa-check-circle {
+  color: #54b854;
   transition: 0.5s;
 }
-i {
-  font-size: 16px;
-}
-.fa-check-circle {
-  color: lightgreen;
-}
 .favorite {
- background-color: lightgreen; 
- transition: 0.5s;
+  background-color: #ddf3dd; 
+  transition: 0.5s;
+}
+.solution-text p {
+  margin: 0;
+}
+
+.solution-text p,
+.solution-text {
+  text-align: left;
+}
+
+.solution-text {
+  display: flex;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.solution-text * {
+  padding-right: 10px;
 }
 </style>
