@@ -7,6 +7,7 @@
   export default {
     components: {
       passionIcon: PassionIcon,
+      affectIcon: AffectIcon,
       affectSolutions: Solutions,
       affectInvolvements: Involvements
     }

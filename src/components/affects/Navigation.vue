@@ -49,21 +49,22 @@ export default {
 <template>
   <nav class="affect-navigation">
     <affect-icon></affect-icon>
-    <action-icon></action-icon>
     <passion-icon></passion-icon>
+    <action-icon></action-icon>    
+    <sorrow-icon></sorrow-icon>
+    <joy-icon></joy-icon>
+    <desire-icon></desire-icon>
     <nobility-icon></nobility-icon>
     <courage-icon></courage-icon>
     <self-approval-icon></self-approval-icon>
-    <joy-icon></joy-icon>
     <love-icon></love-icon>
     <sympathy-icon></sympathy-icon>
     <pride-icon></pride-icon>
     <honor-icon></honor-icon>
-    <sorrow-icon></sorrow-icon>
     <hatred-icon></hatred-icon>
     <humility-icon></humility-icon>
     <shame-icon></shame-icon>
-    <desire-icon></desire-icon>
+    
     <benevolence-icon></benevolence-icon>
     <gratitude-icon></gratitude-icon>
     <anger-icon></anger-icon>
