@@ -1,3 +1,23 @@
+<script>
+  import { $state } from '../../store/store'
+
+  export default {
+    data() {
+      return { 
+        newMeditation: {
+          text: '',
+          favorite: true
+        }
+      };
+    },
+    methods: {
+      addMeditation() {
+        this.$state.store.userAdded.push(newMeditation);
+      }
+    }
+  }
+</script>
+
 <template>
   <div v-show="$store.state.affects[$router.history.current.path]">
     <h3>Meditations</h3>

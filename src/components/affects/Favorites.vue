@@ -1,7 +1,8 @@
 <template>
   <aside>
     <div @click="solution.favorite = false"
-         :key="solution" v-for="solution in $store.state.solutions" v-show="solution.favorite">
+         :key="solution" v-for="solution in $store.state.solutions" 
+         v-show="solution.favorite">
       <i class="fas fa-check-circle"></i>
       <br>
       <p>{{ solution.text }}</p>
