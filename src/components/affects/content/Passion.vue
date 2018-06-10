@@ -1,9 +1,14 @@
 <script>
   import PassionIcon from '../icons/PassionIcon'
+  import AffectIcon from '../icons/AffectIcon'
+  import Solutions from '../Solutions.vue'
+  import Involvements from '../Involvements.vue'
 
   export default {
     components: {
-      passionIcon: PassionIcon
+      passionIcon: PassionIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -11,13 +16,8 @@
 <template>
   <article>
     <passion-icon/>
-    <blockquote>
-      Definition goes here
-    </blockquote>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <p>An <affect-icon></affect-icon> of which we are only the partial cause.</p>
+    <affect-solutions></affect-solutions>
+    <affect-involvements></affect-involvements>
   </article>
 </template>

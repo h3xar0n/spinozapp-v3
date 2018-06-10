@@ -50,11 +50,27 @@
   <section>
     <h3>Involvements</h3>
     <p>{{ $store.state.affects[$router.history.current.path].name }} is involved in:</p>
-    <!-- Do one for nested levels too -->
+    <!-- Affect -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Affect'">
+      <action-icon></action-icon>
+      <passion-icon></passion-icon>
+      <joy-icon></joy-icon>
+      <sorrow-icon></sorrow-icon>
+      <desire-icon></desire-icon>
+    </div>
+    <!-- Action -->
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Action'">
       <courage-icon></courage-icon>
       <nobility-icon></nobility-icon>
       <self-approval-icon></self-approval-icon>
+      <joy-icon></joy-icon>
+      <desire-icon></desire-icon>
+    </div>
+    <!-- Passion -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Passion'">
+      <sorrow-icon></sorrow-icon>
+      <joy-icon></joy-icon>
+      <desire-icon></desire-icon>
     </div>
   </section>
 </template>

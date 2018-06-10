@@ -50,10 +50,10 @@ export default {
   <nav class="affect-navigation">
     <affect-icon></affect-icon>
     <action-icon></action-icon>
+    <passion-icon></passion-icon>
     <nobility-icon></nobility-icon>
     <courage-icon></courage-icon>
     <self-approval-icon></self-approval-icon>
-    <passion-icon></passion-icon>
     <joy-icon></joy-icon>
     <love-icon></love-icon>
     <sympathy-icon></sympathy-icon>
