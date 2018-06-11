@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/affects/selfapproval">
+  <router-link to="/affects/selfacceptance">
     <div class="icon-component">
       <i class="fas fa-user-check"></i>
       <p>

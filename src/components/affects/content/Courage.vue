@@ -25,6 +25,7 @@
     <courage-icon></courage-icon>
     <p>An <action-icon></action-icon> pertaining to reasonable <desire-icon></desire-icon> and <joy-icon></joy-icon> of others.</p>
     <affect-solutions></affect-solutions>
-    <affect-involvements></affect-involvements>
+    <!-- No involvements for now -->
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>

@@ -23,11 +23,11 @@ export const affects = {
     dependencies: ['/affects/action', '/affects'],
     insofar: 'Nobility, it can be strengethened with the following'
   },
-  '/affects/selfapproval': {
-    name: 'Self-Approval',
+  '/affects/selfacceptance': {
+    name: 'Self-Acceptance',
     solutions: [],
     dependencies: ['/affects/action', '/affects'],
-    insofar: 'Self-Approval, it can be strengethened with the following'
+    insofar: 'Self-Acceptance, it can be strengethened with the following'
   },
   '/affects/passion': {
     name: 'Passion',

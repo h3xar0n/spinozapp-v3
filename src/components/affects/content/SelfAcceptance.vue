@@ -2,12 +2,16 @@
   import ActionIcon from '../icons/ActionIcon'
   import SelfAcceptanceIcon from '../icons/SelfAcceptanceIcon'
   import JoyIcon from '../icons/JoyIcon'
+  import Solutions from '../Solutions'
+  import Involvements from '../Involvements'
 
   export default {
     components: {
       actionIcon: ActionIcon,
       joyIcon: JoyIcon,
-      selfAcceptanceIcon: SelfAcceptanceIcon
+      selfAcceptanceIcon: SelfAcceptanceIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -16,10 +20,8 @@
   <article>
     <self-acceptance-icon/>
     <p><joy-icon/> arising from the thought of our own power of <action-icon/></p>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <affect-solutions></affect-solutions>
+    <!-- No involvements for now -->
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>

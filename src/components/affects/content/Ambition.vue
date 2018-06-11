@@ -23,6 +23,7 @@
     <ambition-icon></ambition-icon>
     <p>An excessive <desire-icon></desire-icon> for power, namely for others to live in accordance with our values. Although it can hardly be avoided if one believes in their own values, it may lead us to merely simulate virtue for the sake of <honor-icon></honor-icon>. Worse, it compels us to do things that we know go against our understanding, and thereby amplifies every other <passion-icon></passion-icon>.</p>
     <affect-solutions></affect-solutions>
-    <affect-involvements></affect-involvements>
+    <!-- No involvements for now -->
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>
