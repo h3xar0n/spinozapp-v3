@@ -14,19 +14,19 @@ export const affects = {
   '/affects/courage': {
     name: 'Courage',
     solutions: [],
-    dependencies: ['/affects/action', '/affects'],
+    dependencies: ['/affects/action', 'affects/joy', '/affects/desire', '/affects'],
     insofar: 'Courage, it can be strengethened'
   },
   '/affects/nobility': {
     name: 'Nobility',
     solutions: [],
-    dependencies: ['/affects/action', '/affects'],
+    dependencies: ['/affects/action', 'affects/joy', '/affects/desire', '/affects'],
     insofar: 'Nobility, it can be strengethened'
   },
   '/affects/selfacceptance': {
     name: 'Self-Acceptance',
     solutions: [],
-    dependencies: ['/affects/action', '/affects'],
+    dependencies: ['/affects/action', '/affects/joy', '/affects/desire', '/affects'],
     insofar: 'Self-Acceptance, it can be strengethened'
   },
   '/affects/passion': {

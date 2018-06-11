@@ -49,7 +49,7 @@
 <template>
   <section>
     <h3 class="panel-title">Involvements</h3>
-    <p>{{ $store.state.affects[$router.history.current.path].name }} is involved in:</p>
+    <p>{{ $store.state.affects[$router.history.current.path].name }} is primarily involved in:</p>
     <!-- Affect -->
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Affect'">
       <action-icon></action-icon>
@@ -72,15 +72,43 @@
       <joy-icon></joy-icon>
       <desire-icon></desire-icon>
     </div>
+    <!-- Joy -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Joy'">
+      <love-icon></love-icon>
+      <honor-icon></honor-icon>
+      <pride-icon></pride-icon>
+      <self-acceptance-icon></self-acceptance-icon>
+      <sympathy-icon></sympathy-icon>
+      <gratitude-icon></gratitude-icon>
+    </div>
+    <!-- Sorrow -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Sorrow'">
+      <hatred-icon></hatred-icon>
+      <shame-icon></shame-icon>
+      <humility-icon></humility-icon>
+      <anger-icon></anger-icon>
+      <sympathy-icon></sympathy-icon>
+    </div>
+    <!-- Desire -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Desire'">
+      <ambition-icon></ambition-icon>
+      <benevolence-icon></benevolence-icon>
+      <gratitude-icon></gratitude-icon>
+      <anger-icon></anger-icon>
+      <sympathy-icon></sympathy-icon>
+      <nobility-icon></nobility-icon>
+      <courage-icon></courage-icon>
+    </div>
   </section>
 </template>
 
 <style scoped>
   div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
-  div div {
-    transform: scale(0.9);
+  div div * {
+    transform: scale(0.7);
   }
 </style>
