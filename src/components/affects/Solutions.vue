@@ -32,7 +32,6 @@
 </template>
 
 <style scoped>
-
 i {
   font-size: 32px;
   color: lightgray;
@@ -45,34 +44,26 @@ i {
   transition: 0.5s;
 }
 .favorite {
-  background-color: #ddf3dd; 
+  background-color: #ddf3dd;
   transition: 0.5s;
 }
 .solution-text p {
   margin: 0;
 }
-
 .solution-text p,
 .solution-text {
   text-align: left;
 }
-
 .solution-text {
   display: flex;
   padding: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
-
 .solution-text * {
   padding-right: 10px;
 }
 .meditations-panel p {
   text-align: left;
 }
-
-h3.meditations {
-  font-size: 22px !important;
-}
-
 </style>
