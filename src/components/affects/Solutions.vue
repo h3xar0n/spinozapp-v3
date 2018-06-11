@@ -35,7 +35,7 @@
     <div :key="dependency"
           v-for="dependency in $store.state.affects[$router.history.current.path].dependencies">
       <br>
-      <p>Insofar as {{ $store.state.affects[$router.history.current.path].name }} is {{ $store.state.affects[dependency].insofar }} with the following: </p>
+      <p>Insofar as {{ $store.state.affects[$router.history.current.path].name }} involves {{ $store.state.affects[dependency].insofar }} with the same thoughts: </p>
       <div :key="subSolutionId"
            class="solution-text"
            :class="{favorite: $store.state.solutions[subSolutionId].favorite}"

@@ -4,6 +4,8 @@
   import AffectIcon from '../icons/AffectIcon'
   import DesireIcon from '../icons/DesireIcon'
   import JoyIcon from '../icons/JoyIcon'
+  import Solutions from '../Solutions.vue'
+  import Involvements from '../Involvements.vue'
 
   export default {
     components: {
@@ -11,7 +13,9 @@
       actionIcon: ActionIcon,
       affectIcon: AffectIcon,
       desireIcon: DesireIcon,
-      joyIcon: JoyIcon
+      joyIcon: JoyIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -20,13 +24,7 @@
   <article>
     <courage-icon></courage-icon>
     <p>An <action-icon></action-icon> pertaining to reasonable <desire-icon></desire-icon> and <joy-icon></joy-icon> of others.</p>
-    <blockquote>
-      Definition goes here
-    </blockquote>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <affect-solutions></affect-solutions>
+    <affect-involvements></affect-involvements>
   </article>
 </template>

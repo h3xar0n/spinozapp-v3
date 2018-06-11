@@ -49,26 +49,32 @@ export default {
 <template>
   <nav class="affect-navigation">
     <affect-icon></affect-icon>
+    <action-icon></action-icon> 
     <passion-icon></passion-icon>
-    <action-icon></action-icon>    
     <sorrow-icon></sorrow-icon>
     <joy-icon></joy-icon>
     <desire-icon></desire-icon>
-    <nobility-icon></nobility-icon>
+    <!-- Fear -->
+    <!-- Hope -->
+    <!-- Despair -->
+    <!-- Confidence -->
     <courage-icon></courage-icon>
-    <self-approval-icon></self-approval-icon>
-    <love-icon></love-icon>
-    <sympathy-icon></sympathy-icon>
-    <pride-icon></pride-icon>
-    <honor-icon></honor-icon>
     <hatred-icon></hatred-icon>
-    <humility-icon></humility-icon>
-    <shame-icon></shame-icon>
-    
-    <benevolence-icon></benevolence-icon>
-    <gratitude-icon></gratitude-icon>
+    <love-icon></love-icon>
     <anger-icon></anger-icon>
+    <gratitude-icon></gratitude-icon>
+    <!-- Envy  -->
+    <sympathy-icon></sympathy-icon>
+    <!-- Indignation -->
+    <benevolence-icon></benevolence-icon>
+    <shame-icon></shame-icon>
+    <honor-icon></honor-icon>
     <ambition-icon></ambition-icon>
+    <nobility-icon></nobility-icon>
+    <humility-icon></humility-icon>
+    <pride-icon></pride-icon>
+    <self-approval-icon></self-approval-icon>
+    
   </nav>
 </template>
 

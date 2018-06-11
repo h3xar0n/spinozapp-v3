@@ -17,7 +17,7 @@
 <template>
   <article>
     <passion-icon/>
-    <p>An <affect-icon></affect-icon> of which we are only the partial cause.</p>
+    <p><affect-icon></affect-icon> of which we are only the partial cause.</p>
     <affect-solutions></affect-solutions>
     <affect-involvements></affect-involvements>
   </article>

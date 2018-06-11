@@ -3,13 +3,17 @@
   import AffectIcon from '../icons/AffectIcon'
   import DesireIcon from '../icons/DesireIcon'
   import PassionIcon from '../icons/PassionIcon'
+  import Solutions from '../Solutions'
+  import Involvements from '../Involvements'
 
   export default {
     components: {
       actionIcon: ActionIcon,
       affectIcon: AffectIcon,
       desireIcon: DesireIcon,
-      passionIcon: PassionIcon
+      passionIcon: PassionIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -22,11 +26,8 @@
       and is an <action-icon></action-icon> or <passion-icon></passion-icon> based on whether it pertains 
       solely to our essence.
     </p>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <affect-solutions></affect-solutions>
+    <affect-involvements></affect-involvements>
   </article>
 </template>
 

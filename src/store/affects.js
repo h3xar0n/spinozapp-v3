@@ -3,37 +3,79 @@ export const affects = {
     name: 'Affect',
     solutions: [1, 2, 3],
     dependencies: [],
-    insofar: 'an Affect, it can be refined'
+    insofar: 'Affect, it can be refined'
   },
   '/affects/action': {
     name: 'Action',
     solutions: [4, 5],
     dependencies: ['/affects'],
-    insofar: 'an Action, it can be strengthened'
+    insofar: 'Action, it can be strengthened'
   },
   '/affects/passion': {
     name: 'Passion',
     solutions: [],
     dependencies: ['/affects'],
-    insofar: 'a Passion, it can be weakened or refined'
+    insofar: 'Passion, it can be weakened or refined'
   },
   '/affects/sorrow': {
     name: 'Sorrow',
     solutions: [],
     dependencies: ['/affects/passion', '/affects'],
-    insofar: 'a Sorrow, it can be weakened'
+    insofar: 'Sorrow, it can be weakened'
   },
   '/affects/joy': {
     name: 'Joy',
     solutions: [],
     dependencies: ['/affects/passion', '/affects/action', '/affects'],
-    insofar: 'a Sorrow, it can be weakened'
+    insofar: 'Joy, it can be strengthened or refined'
+  },
+  '/affects/desire': {
+    name: 'Desire',
+    solutions: [],
+    dependencies: ['/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Desire, it can be strengthened or refined'
+  },
+  '/affects/courage': {
+    name: 'Courage',
+    solutions: [],
+    dependencies: ['/affects/action', '/affects'],
+    insofar: 'Courage, it can be strengthened'
+  },
+  '/affects/hatred': {
+    name: 'Hatred',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/passion', '/affects'],
+    insofar: 'Hatred, it can be weakened'
+  },
+  '/affects/love': {
+    name: 'Love',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Love, it can be strengthened or refined'
+  },
+  '/affects/anger': {
+    name: 'Anger',
+    solutions: [],
+    dependencies: ['/affects/hatred', '/affects/sorrow', '/affects/passion', '/affects'],
+    insofar: 'Anger, it can be weakened'
+  },
+  '/affects/gratitude': {
+    name: 'Gratitude',
+    solutions: [],
+    dependencies: ['/affects/love', '/affects/joy', '/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Gratitude, it can be strengthened or refined'
+  },
+  '/affects/sympathy': {
+    name: 'Sympathy',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/joy', '/affects/desire', '/affects/passion', '/affects'],
+    insofar: 'Gratitude, it can be strengthened or refined'
   },
   '/affects/ambition': {
     name: 'Ambition',
     solutions: [],
-    dependencies: ['/affects/passion', '/affects'],
-    insofar: 'a Sorrow, it can be weakened'
+    dependencies: ['/affects/desire', '/affects/passion', '/affects'],
+    insofar: 'Ambition, it can be weakened or refined'
   }
   // 'route name as key': {
   //   name: '',
