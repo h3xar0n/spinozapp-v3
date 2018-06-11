@@ -34,10 +34,6 @@ export default {
   margin: 0 auto;
 }
 
-article h3 {
-  font-size: 22px !important;
-}
-
 article {
   text-align: center;
 }
@@ -173,6 +169,10 @@ nav {
 aside {
   flex: 1 1 20%;
   background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
+}
+
+.panel-title {
+  font-size: 22px !important;
 }
 
 @media all and (min-width: 1200px) {

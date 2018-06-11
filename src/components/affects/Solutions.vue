@@ -1,6 +1,6 @@
 <template>
   <div v-show="$store.state.affects[$router.history.current.path]" class="meditations-panel">
-    <h3>Meditations</h3>
+    <h3 class="panel-title">Meditations</h3>
     <div :key="solutionId"
          class="solution-text"
          :class="{favorite: $store.state.solutions[solutionId].favorite}"
@@ -70,4 +70,9 @@ i {
 .meditations-panel p {
   text-align: left;
 }
+
+h3.meditations {
+  font-size: 22px !important;
+}
+
 </style>

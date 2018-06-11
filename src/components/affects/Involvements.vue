@@ -48,7 +48,7 @@
 
 <template>
   <section>
-    <h3>Involvements</h3>
+    <h3 class="panel-title">Involvements</h3>
     <p>{{ $store.state.affects[$router.history.current.path].name }} is involved in:</p>
     <!-- Affect -->
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Affect'">
