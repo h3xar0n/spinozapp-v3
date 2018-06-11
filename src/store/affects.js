@@ -98,20 +98,26 @@ export const affects = {
   '/affects/anger': {
     name: 'Anger',
     solutions: [],
-    dependencies: ['/affects/hatred', '/affects/sorrow', '/affects/passion', '/affects'],
+    dependencies: ['affects/desire', '/affects/hatred', '/affects/sorrow', '/affects/passion', '/affects'],
     insofar: 'Anger, it can be weakened'
   },
   '/affects/gratitude': {
     name: 'Gratitude',
     solutions: [],
-    dependencies: ['/affects/love', '/affects/joy', '/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Gratitude, it can be strengthened or refined'
+    dependencies: ['affects/desire', '/affects/love', '/affects/joy', '/affects/passion', '/affects'],
+    insofar: 'Gratitude, it can be refined'
   },
   '/affects/ambition': {
     name: 'Ambition',
     solutions: [],
-    dependencies: ['/affects/desire', '/affects/passion', '/affects'],
-    insofar: 'Ambition, it can be weakened or refined'
+    dependencies: ['/affects/desire', '/affects/vainglory', '/affects/pride', '/affects/passion', '/affects'],
+    insofar: 'Ambition, it can be refined'
+  },
+  '/affects/benevolence': {
+    name: 'Benevolence',
+    solutions: [],
+    dependencies: ['/affects/desire', '/affects/sympathy', '/affects/passion', '/affects'],
+    insofar: 'Benevolence, it can be refined'
   }
   // 'route name as key': {
   //   name: '',
