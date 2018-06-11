@@ -14,7 +14,7 @@ import Humility from '@/components/affects/content/Humility'
 import Love from '@/components/affects/content/Love'
 import Nobility from '@/components/affects/content/Nobility'
 import Pride from '@/components/affects/content/Pride'
-import SelfApproval from '@/components/affects/content/SelfApproval'
+import SelfAcceptance from '@/components/affects/content/SelfAcceptance'
 import Shame from '@/components/affects/content/Shame'
 import Passion from '@/components/affects/content/Passion'
 import Joy from '@/components/affects/content/Joy'
@@ -73,8 +73,8 @@ export const affects = {
     component: Nobility
   },
   {
-    path: 'selfapproval',
-    component: SelfApproval
+    path: 'selfacceptance',
+    component: SelfAcceptance
   },
   {
     path: 'shame',

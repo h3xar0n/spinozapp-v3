@@ -1,20 +1,20 @@
 <script>
   import ActionIcon from '../icons/ActionIcon'
-  import SelfApprovalIcon from '../icons/SelfApprovalIcon'
+  import SelfAcceptanceIcon from '../icons/SelfAcceptanceIcon'
   import JoyIcon from '../icons/JoyIcon'
 
   export default {
     components: {
       actionIcon: ActionIcon,
       joyIcon: JoyIcon,
-      selfApprovalIcon: SelfApprovalIcon
+      selfAcceptanceIcon: SelfAcceptanceIcon
     }
   }
 </script>
 
 <template>
   <article>
-    <self-approval-icon/>
+    <self-acceptance-icon/>
     <p><joy-icon/> arising from the thought of our own power of <action-icon/></p>
     <div>Video goes here</div>
     <div>Solutions go here</div>

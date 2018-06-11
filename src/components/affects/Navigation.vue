@@ -16,7 +16,7 @@ import LoveIcon from './icons/LoveIcon.vue'
 import NobilityIcon from './icons/NobilityIcon.vue'
 import PassionIcon from './icons/PassionIcon.vue'
 import PrideIcon from './icons/PrideIcon.vue'
-import SelfApprovalIcon from './icons/SelfApprovalIcon.vue'
+import SelfAcceptanceIcon from './icons/SelfAcceptanceIcon.vue'
 import ShameIcon from './icons/ShameIcon.vue'
 import SorrowIcon from './icons/SorrowIcon.vue'
 
@@ -36,7 +36,7 @@ export default {
     loveIcon: LoveIcon,
     nobilityIcon: NobilityIcon,
     prideIcon: PrideIcon,
-    selfApprovalIcon: SelfApprovalIcon,
+    selfAcceptanceIcon: SelfAcceptanceIcon,
     shameIcon: ShameIcon,
     sorrowIcon: SorrowIcon,
     joyIcon: JoyIcon,
@@ -73,7 +73,7 @@ export default {
     <nobility-icon></nobility-icon>
     <humility-icon></humility-icon>
     <pride-icon></pride-icon>
-    <self-approval-icon></self-approval-icon>
+    <self-acceptance-icon></self-acceptance-icon>
     
   </nav>
 </template>

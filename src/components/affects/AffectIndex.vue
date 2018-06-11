@@ -2,19 +2,10 @@
 import Navigation from './Navigation'
 import Favorites from './Favorites'
 
-// Move to involvement component
-import CourageIcon from './icons/CourageIcon'
-import NobilityIcon from './icons/NobilityIcon'
-import SelfApprovalIcon from './icons/SelfApprovalIcon'
-
 export default {
   components: {
     affectNavigation: Navigation,
     affectFavorites: Favorites,
-    // Move to involvement component
-    courageIcon: CourageIcon,
-    nobilityIcon: NobilityIcon,
-    selfApprovalIcon: SelfApprovalIcon
   }
 };
 </script>
@@ -126,7 +117,6 @@ article p .icon-component {
   border: 1px solid #d4d0d0;
   background-image: linear-gradient(-180deg,#fff 33%,#fff8f8 100%);
   border-radius: 6px;
-   
 }
 
 article p .icon-component br {

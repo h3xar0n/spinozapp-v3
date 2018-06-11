@@ -16,7 +16,7 @@
   import NobilityIcon from './icons/NobilityIcon.vue'
   import PassionIcon from './icons/PassionIcon.vue'
   import PrideIcon from './icons/PrideIcon.vue'
-  import SelfApprovalIcon from './icons/SelfApprovalIcon.vue'
+  import SelfAcceptanceIcon from './icons/SelfAcceptanceIcon.vue'
   import ShameIcon from './icons/ShameIcon.vue'
   import SorrowIcon from './icons/SorrowIcon.vue'
 
@@ -36,7 +36,7 @@
       loveIcon: LoveIcon,
       nobilityIcon: NobilityIcon,
       prideIcon: PrideIcon,
-      selfApprovalIcon: SelfApprovalIcon,
+      selfAcceptanceIcon: SelfAcceptanceIcon,
       shameIcon: ShameIcon,
       sorrowIcon: SorrowIcon,
       joyIcon: JoyIcon,
@@ -62,7 +62,7 @@
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Action'">
       <courage-icon></courage-icon>
       <nobility-icon></nobility-icon>
-      <self-approval-icon></self-approval-icon>
+      <self-acceptance-icon></self-acceptance-icon>
       <joy-icon></joy-icon>
       <desire-icon></desire-icon>
     </div>

@@ -11,6 +11,24 @@ export const affects = {
     dependencies: ['/affects'],
     insofar: 'Action, it can be strengthened'
   },
+  '/affects/courage': {
+    name: 'Courage',
+    solutions: [],
+    dependencies: ['/affects/action', '/affects'],
+    insofar: 'Courage, it can be strengethened with the following'
+  },
+  '/affects/nobility': {
+    name: 'Nobility',
+    solutions: [],
+    dependencies: ['/affects/action', '/affects'],
+    insofar: 'Nobility, it can be strengethened with the following'
+  },
+  '/affects/selfapproval': {
+    name: 'Self-Approval',
+    solutions: [],
+    dependencies: ['/affects/action', '/affects'],
+    insofar: 'Self-Approval, it can be strengethened with the following'
+  },
   '/affects/passion': {
     name: 'Passion',
     solutions: [],
@@ -34,12 +52,6 @@ export const affects = {
     solutions: [],
     dependencies: ['/affects/passion', '/affects/action', '/affects'],
     insofar: 'Desire, it can be strengthened or refined'
-  },
-  '/affects/courage': {
-    name: 'Courage',
-    solutions: [],
-    dependencies: ['/affects/action', '/affects'],
-    insofar: 'Courage, it can be strengthened'
   },
   '/affects/hatred': {
     name: 'Hatred',
