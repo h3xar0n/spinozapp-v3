@@ -1,9 +1,15 @@
 <script>
   import HonorIcon from '../icons/HonorIcon'
+  import JoyIcon from '../icons/JoyIcon'
+  import Solutions from '../Solutions'
+  import Involvements from '../Involvements'
 
   export default {
     components: {
-      honorIcon: HonorIcon
+      joyIcon: JoyIcon,
+      honorIcon: HonorIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -11,13 +17,8 @@
 <template>
   <article>
     <honor-icon/>
-    <blockquote>
-      Definition goes here
-    </blockquote>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <p><joy-icon></joy-icon> at the thought that other people approve of something we have caused.</p>
+    <affect-solutions></affect-solutions>
+    <affect-involvements></affect-involvements>
   </article>
 </template>

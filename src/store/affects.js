@@ -28,6 +28,12 @@ export const affects = {
     solutions: [],
     dependencies: ['/affects/passion', '/affects/action', '/affects'],
     insofar: 'a Sorrow, it can be weakened'
+  },
+  '/affects/ambition': {
+    name: 'Ambition',
+    solutions: [],
+    dependencies: ['/affects/passion', '/affects'],
+    insofar: 'a Sorrow, it can be weakened'
   }
   // 'route name as key': {
   //   name: '',

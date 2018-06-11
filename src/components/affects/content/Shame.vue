@@ -1,9 +1,15 @@
 <script>
   import ShameIcon from '../icons/ShameIcon'
+  import SorrowIcon from '../icons/SorrowIcon'
+  import Solutions from '../Solutions'
+  import Involvements from '../Involvements'
 
   export default {
     components: {
-      shameIcon: ShameIcon
+      sorrowIcon: SorrowIcon,
+      shameIcon: ShameIcon,
+      affectSolutions: Solutions,
+      affectInvolvements: Involvements
     }
   }
 </script>
@@ -11,13 +17,8 @@
 <template>
   <article>
     <shame-icon/>
-    <blockquote>
-      Definition goes here
-    </blockquote>
-    <div>Video goes here</div>
-    <div>Solutions go here</div>
-    <br>
-    <h3>Variants:</h3>
-    <div>Variants go here</div>
+    <p><sorrow-icon></sorrow-icon> at the thought that other people disapprove of something we have caused.</p>
+    <affect-solutions></affect-solutions>
+    <affect-involvements></affect-involvements>
   </article>
 </template>
