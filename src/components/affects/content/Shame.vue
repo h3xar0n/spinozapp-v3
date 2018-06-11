@@ -19,6 +19,6 @@
     <shame-icon/>
     <p><sorrow-icon></sorrow-icon> at the thought that other people disapprove of something we have caused.</p>
     <affect-solutions></affect-solutions>
-    <affect-involvements></affect-involvements>
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>

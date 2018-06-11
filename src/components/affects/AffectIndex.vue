@@ -25,6 +25,18 @@ export default {
 
 <style>
 
+main.affects-route {
+  height: calc(100vh - 60px);
+}
+
+main.affects-route>* {
+  overflow-y: scroll;
+}
+
+article.feature {
+  overflow-x: hidden;
+}
+
 .affect-video {
   border-radius: 16px;
   width: 640px;

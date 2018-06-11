@@ -33,6 +33,6 @@
       Unlike <gratitude-icon></gratitude-icon>, the basis of <benevolence-icon></benevolence-icon> is a sense of similarity with another person, not necessarily <love-icon></love-icon> for them.
       It can be excessive insofar as we often regret decisions that were based on pity, at least inasmuch as we should not need to feel <sorrow-icon></sorrow-icon> as the basis for helping others. When the decision to help is based solely on reason, it is the <action-icon></action-icon> of <nobility-icon></nobility-icon>.</p>
     <affect-solutions></affect-solutions>
-    <affect-involvements></affect-involvements>
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>

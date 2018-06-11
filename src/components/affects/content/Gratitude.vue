@@ -30,6 +30,6 @@
       solely to our essence, insofar as we might think too highly of others or too little of ourselves.
     </p>
     <affect-solutions></affect-solutions>
-    <affect-involvements></affect-involvements>
+    <!-- <affect-involvements></affect-involvements> -->
   </article>
 </template>

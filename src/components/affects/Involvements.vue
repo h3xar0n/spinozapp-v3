@@ -81,6 +81,11 @@
       <sympathy-icon></sympathy-icon>
       <gratitude-icon></gratitude-icon>
     </div>
+    <!-- Love -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Love'">
+      <gratitude-icon></gratitude-icon>
+      <nobility-icon></nobility-icon>
+    </div>
     <!-- Sorrow -->
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Sorrow'">
       <hatred-icon></hatred-icon>
@@ -88,6 +93,10 @@
       <humility-icon></humility-icon>
       <anger-icon></anger-icon>
       <sympathy-icon></sympathy-icon>
+    </div>
+    <!-- Hatred -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Hatred'">
+      <anger-icon></anger-icon>
     </div>
     <!-- Desire -->
     <div v-show="$store.state.affects[$router.history.current.path].name === 'Desire'">
@@ -98,6 +107,18 @@
       <sympathy-icon></sympathy-icon>
       <nobility-icon></nobility-icon>
       <courage-icon></courage-icon>
+    </div>
+    <!-- Sympathy -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Sympathy'">
+      <benevolence-icon></benevolence-icon>
+    </div>
+    <!-- Vainglory -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Vainglory'">
+      <ambition-icon></ambition-icon>
+    </div>
+    <!-- Pride -->
+    <div v-show="$store.state.affects[$router.history.current.path].name === 'Pride'">
+      <ambition-icon></ambition-icon>
     </div>
   </section>
 </template>
