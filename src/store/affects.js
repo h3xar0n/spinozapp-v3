@@ -15,19 +15,19 @@ export const affects = {
     name: 'Courage',
     solutions: [],
     dependencies: ['/affects/action', '/affects'],
-    insofar: 'Courage, it can be strengethened with the following'
+    insofar: 'Courage, it can be strengethened'
   },
   '/affects/nobility': {
     name: 'Nobility',
     solutions: [],
     dependencies: ['/affects/action', '/affects'],
-    insofar: 'Nobility, it can be strengethened with the following'
+    insofar: 'Nobility, it can be strengethened'
   },
   '/affects/selfacceptance': {
     name: 'Self-Acceptance',
     solutions: [],
     dependencies: ['/affects/action', '/affects'],
-    insofar: 'Self-Acceptance, it can be strengethened with the following'
+    insofar: 'Self-Acceptance, it can be strengethened'
   },
   '/affects/passion': {
     name: 'Passion',
@@ -35,53 +35,65 @@ export const affects = {
     dependencies: ['/affects'],
     insofar: 'Passion, it can be weakened or refined'
   },
+  '/affects/joy': {
+    name: 'Joy',
+    solutions: [],
+    dependencies: ['/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Joy, it can be refined'
+  },
+  '/affects/sympathy': {
+    name: 'Sympathy',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/joy', '/affects/desire', '/affects/passion', '/affects'],
+    insofar: 'Gratitude, it can be refined'
+  },
+  '/affects/love': {
+    name: 'Love',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Love, it can be refined'
+  },
+  '/affects/vainglory': {
+    name: 'Vainglory',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
+    insofar: 'Vainglory, it can be refined'
+  },
+  '/affects/pride': {
+    name: 'Pride',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
+    insofar: 'Pride, it can be refined'
+  },
   '/affects/sorrow': {
     name: 'Sorrow',
     solutions: [],
     dependencies: ['/affects/passion', '/affects'],
     insofar: 'Sorrow, it can be weakened'
   },
-  '/affects/joy': {
-    name: 'Joy',
-    solutions: [],
-    dependencies: ['/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Joy, it can be strengthened or refined'
-  },
-  '/affects/sympathy': {
-    name: 'Sympathy',
-    solutions: [],
-    dependencies: ['/affects/sorrow', '/affects/joy', '/affects/desire', '/affects/passion', '/affects'],
-    insofar: 'Gratitude, it can be strengthened or refined'
-  },
-  '/affects/love': {
-    name: 'Love',
-    solutions: [],
-    dependencies: ['/affects/joy', '/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Love, it can be strengthened or refined'
-  },
-  '/affects/vainglory': {
-    name: 'Vainglory',
-    solutions: [],
-    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
-    insofar: 'Vainglory, it can be weakened'
-  },
-  '/affects/pride': {
-    name: 'Pride',
-    solutions: [],
-    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
-    insofar: 'Pride, it can be weakened'
-  },
-  '/affects/desire': {
-    name: 'Desire',
-    solutions: [],
-    dependencies: ['/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Desire, it can be strengthened or refined'
-  },
   '/affects/hatred': {
     name: 'Hatred',
     solutions: [],
     dependencies: ['/affects/sorrow', '/affects/passion', '/affects'],
     insofar: 'Hatred, it can be weakened'
+  },
+  '/affects/shame': {
+    name: 'Shame',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/passion', '/affects'],
+    insofar: 'Shame, it can be weakened'
+  },
+  '/affects/humility': {
+    name: 'Humility',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/passion', '/affects'],
+    insofar: 'Humility, it can be weakened'
+  },
+  '/affects/desire': {
+    name: 'Desire',
+    solutions: [],
+    dependencies: ['/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Desire, it can be refined'
   },
   '/affects/anger': {
     name: 'Anger',
