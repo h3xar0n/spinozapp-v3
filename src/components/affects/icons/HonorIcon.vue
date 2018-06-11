@@ -1,9 +1,9 @@
 <template>
-  <router-link to="/affects/honor">
+  <router-link to="/affects/vainglory">
     <div class="icon-component">
       <i class="fas fa-thumbs-up"></i>
       <p>
-        Honor
+        Vainglory
         <br>
         <em>Gloria</em>
       </p>          

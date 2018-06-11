@@ -47,6 +47,30 @@ export const affects = {
     dependencies: ['/affects/passion', '/affects/action', '/affects'],
     insofar: 'Joy, it can be strengthened or refined'
   },
+  '/affects/sympathy': {
+    name: 'Sympathy',
+    solutions: [],
+    dependencies: ['/affects/sorrow', '/affects/joy', '/affects/desire', '/affects/passion', '/affects'],
+    insofar: 'Gratitude, it can be strengthened or refined'
+  },
+  '/affects/love': {
+    name: 'Love',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects/action', '/affects'],
+    insofar: 'Love, it can be strengthened or refined'
+  },
+  '/affects/vainglory': {
+    name: 'Vainglory',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
+    insofar: 'Vainglory, it can be weakened'
+  },
+  '/affects/pride': {
+    name: 'Pride',
+    solutions: [],
+    dependencies: ['/affects/joy', '/affects/passion', '/affects'],
+    insofar: 'Pride, it can be weakened'
+  },
   '/affects/desire': {
     name: 'Desire',
     solutions: [],
@@ -59,12 +83,6 @@ export const affects = {
     dependencies: ['/affects/sorrow', '/affects/passion', '/affects'],
     insofar: 'Hatred, it can be weakened'
   },
-  '/affects/love': {
-    name: 'Love',
-    solutions: [],
-    dependencies: ['/affects/joy', '/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Love, it can be strengthened or refined'
-  },
   '/affects/anger': {
     name: 'Anger',
     solutions: [],
@@ -75,12 +93,6 @@ export const affects = {
     name: 'Gratitude',
     solutions: [],
     dependencies: ['/affects/love', '/affects/joy', '/affects/passion', '/affects/action', '/affects'],
-    insofar: 'Gratitude, it can be strengthened or refined'
-  },
-  '/affects/sympathy': {
-    name: 'Sympathy',
-    solutions: [],
-    dependencies: ['/affects/sorrow', '/affects/joy', '/affects/desire', '/affects/passion', '/affects'],
     insofar: 'Gratitude, it can be strengthened or refined'
   },
   '/affects/ambition': {

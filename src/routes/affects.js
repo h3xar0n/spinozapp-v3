@@ -57,7 +57,7 @@ export const affects = {
     component: Hatred
   },
   {
-    path: 'honor',
+    path: 'vainglory',
     component: Honor
   },
   {
