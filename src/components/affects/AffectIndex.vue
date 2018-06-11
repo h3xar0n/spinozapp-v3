@@ -34,6 +34,10 @@ export default {
   margin: 0 auto;
 }
 
+article h3 {
+  font-size: 22px !important;
+}
+
 article {
   text-align: center;
 }
@@ -41,10 +45,6 @@ article {
 article > * {
   margin: 1vw auto;
   max-width: 750px;
-}
-
-blockquote {
-  font-size: 18px;
 }
 
 p {

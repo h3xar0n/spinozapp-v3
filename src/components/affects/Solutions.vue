@@ -1,25 +1,5 @@
-<script>
-  import { $state } from '../../store/store'
-
-  export default {
-    data() {
-      return { 
-        newMeditation: {
-          text: '',
-          favorite: true
-        }
-      };
-    },
-    methods: {
-      addMeditation() {
-        this.$state.store.userAdded.push(newMeditation);
-      }
-    }
-  }
-</script>
-
 <template>
-  <div v-show="$store.state.affects[$router.history.current.path]">
+  <div v-show="$store.state.affects[$router.history.current.path]" class="meditations-panel">
     <h3>Meditations</h3>
     <div :key="solutionId"
          class="solution-text"
@@ -86,5 +66,8 @@ i {
 
 .solution-text * {
   padding-right: 10px;
+}
+.meditations-panel p {
+  text-align: left;
 }
 </style>

@@ -80,7 +80,7 @@
     display: flex;
     justify-content: space-around;
   }
-  div * {
+  div div {
     transform: scale(0.9);
   }
 </style>
