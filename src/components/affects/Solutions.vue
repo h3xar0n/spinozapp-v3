@@ -12,8 +12,9 @@
           class="fas fa-check-circle"></i>
       <p>{{ $store.state.solutions[solutionId].text }}</p> 
     </div>
-    <div :key="dependency"
-          v-for="dependency in $store.state.affects[$router.history.current.path].dependencies">
+    <div 
+      :key="dependency"
+      v-for="dependency in $store.state.affects[$router.history.current.path].dependencies">
       <br>
       <p>Insofar as {{ $store.state.affects[$router.history.current.path].name }} involves {{ $store.state.affects[dependency].insofar }} with the same thoughts: </p>
       <div :key="subSolutionId"
